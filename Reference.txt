@@ -1,0 +1,18 @@
+00I15   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2018 July-September, B.D. Warner
+00I16   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2018 September-December, B.D. Warner
+00I17   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2019 January-April, B.D. Warner
+00I18   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2019 March-July, B.D. Warner
+00I19   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2019 July-September, B.D. Warner
+00I20   P. Pravec et al 2019, Volume 333, 15 November 2019, Pages 429-463
+00I21   Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS): Paper 3. Skiff, Brian A et al.
+00I22   Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS): Paper 4. Skiff, Brian A et al.
+00I23   Maxime Devogèle et al 2019 AJ 158 196
+00I24   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2019 September-2020 January, B.D. Warner
+00I25   Joseph R. Masiero et al 2020 Planet. Sci. J. 1 5
+00I26   Joseph R. Masiero et al 2021 Planet. Sci. J. 2 162
+00I27   N. G. Simion et al, Spectral properties of near-Earth objects with low-Jovian Tisserand invariant (2021)
+00I28   Alexey V. Sergeyev and Benoit Carry A&A, 652 (2021) A59
+00I29   Near-Earth Asteroid Lightcurve Analysis at the Center for Solar System Studies: 2021 October-December, B.D. Warner
+00I30   Michaël Marsset et al 2022 AJ 163 165
+00I31   A. V. Sergeyev, B. Carry et al A&A, 658 (2022) A109
+
