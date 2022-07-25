@@ -6,25 +6,20 @@ Created on Thu May 12 12:08:52 2022
 """
 
 import pandas as pd
-import sys
-import numpy as np
-import os
-from bs4 import BeautifulSoup as bs
-from lxml import etree
 import xml.etree.ElementTree as ET
+import os
+os.chdir('./new-earn')
+
 from function.is_nan import isNaN
-from function.protolog import protolog
-import tabula
-from function.format_dataset_color import format_dataset_color
 import re
 from ESANEOCC import neocc
 from tqdm import tqdm
 
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
-CSS3_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/'
+CSS3_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/')
 
-NEAPS_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article'
+NEAPS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article'
              '/Lowell Observatory NEAPS/')
 
 # REFERENCE
@@ -33,15 +28,16 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt',
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 # ESA
 
 neo_num = neocc.query_list(list_name='nea_list')
 
 #
-with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Studies_5.html",
+with open(CSS3_URL + "/NEA Lightcurve Analysis at the Center for Solar System Studies_5.html",
           'r', encoding='utf-8') as f:
 
     contents = f.read()
@@ -49,7 +45,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
     root = ET.fromstring(contents)
     for child in root:
         print(child.tag, child.attrib)
-    
+
     table = root.findall("./body/table[2]//td/p")
 
     value_tab = []
@@ -58,15 +54,12 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
             value_tab.append(value.text)
         else:
             value_tab.append("")
-        
 
-            
-        
     for i in range(len(value_tab)):
         value_tab[i] = value_tab[i].replace("\t", "")
         value_tab[i] = value_tab[i].replace("\n", "")
-    
-    # For some pdf the columns Name and the Date are together so in the following part I'm splitting them 
+
+    # For some pdf the columns Name and the Date are together so in the following part I'm splitting them
 
     for i in range(len(value_tab)):
         if not isNaN(value_tab[i]):
@@ -85,17 +78,15 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-        
-        
+
     c = input("What is the number of columns of the pdf file? ")
     col = value_tab[0:int(c)]
     value_tab = value_tab[int(c):]
-    
-    
+
     # Split the Name column in necessary
-    
+
     for i in range(len(value_tab)):
-        if not all(char.isalpha() for char in value_tab[i].replace(" ","")):
+        if not all(char.isalpha() for char in value_tab[i].replace(" ", "")):
             if " " in value_tab[i]:
                 ws = value_tab[i].find(" ")
                 temp_char = value_tab[i][ws+1:]
@@ -120,9 +111,9 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-    
+
     table = table[int(c):]
-        
+
     def count_number(string):
         s = []
         for i in range(len(string)):
@@ -131,9 +122,9 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
             else:
                 continue
         return s
-    
+
     # In the following code I am unifying the provisional designation, because in some parts it is splitted 
-    
+
     for i in range(len(value_tab)):
         if i < len(value_tab)-4:
             if (all(char.isdigit() for char in value_tab[i]) and len(value_tab[i]) == 4) and ((len(value_tab[i+1]) == 2 and (all(char.isalpha() for char in value_tab[i+1])) or (len(count_number(value_tab[i+1])) == 2 and any(char.isdigit() for char in value_tab[i+1])))):
@@ -145,9 +136,9 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             break
-    
+
     test_list = [value_tab[n:n+int(c)] for n in range(0, len(value_tab), int(c))]
-    
+
     for i in range(len(value_tab)):
         if not isNaN(value_tab[i]):
             if value_tab[i][:4].isdigit() and len(count_number(value_tab[i][5:])) == 2:
@@ -166,7 +157,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                         value_tab.insert(i+1, " ")
         else:
             continue
-        
+
     for i in range(len(value_tab)):
         if not isNaN(value_tab[i]):
             if i < len(value_tab)-4:
@@ -176,14 +167,12 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                     continue
         else:
             continue
-    #test = []
     for i in range(len(value_tab)):
         if not isNaN(value_tab[i]):
             if i < len(value_tab)-1:
                 if "," in value_tab[i]:
                     if " " in value_tab[i+1]:
                         new_value = re.split(" ", value_tab[i+1])
-                        #test.append(new_value)
                         value_tab.insert(i+2, new_value[1])
                         value_tab[i+1] = new_value[0]
                     else:
@@ -194,8 +183,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-      
-    # table = table[int(c):]
+
     for i in range(len(value_tab)):
         if not isNaN(value_tab[i]):
             if "P" == value_tab[i]:
@@ -210,12 +198,12 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 except:
                     continue
             else:
-                continue    
+                continue
         else:
             continue
-    
+
     test_var = []
-    
+
     for i in range(len(value_tab)):
         if i < len(value_tab)-4:
             if not isNaN(value_tab[i]):
@@ -243,7 +231,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-        
+
     for i in range(10, len(value_tab)):
         if not isNaN(value_tab[i]):
             if 3 <= len(value_tab[i]) < 7 and all(char.isdigit() for char in value_tab[i]) and len(value_tab[i+1]) == 0:
@@ -252,9 +240,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-    
-    
-    
+
     for i in range(7, len(value_tab)):
         if i < len(value_tab)-10:
             if len(value_tab[i]) < 5 and len(value_tab[i-1]) < 5 and "." in value_tab[i] and "." in value_tab[i-1]:
@@ -267,26 +253,26 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-    
+
     for i in range(7, len(value_tab)):
         if i < len(value_tab)-10:
             if (len(value_tab[i]) < 7 and all(char.isdigit() for char in value_tab[i]) and len(value_tab[i]) != 0) and (all(char.isdigit() for char in value_tab[i+1][:4]) and all(char.isalpha() for char in value_tab[i+1][5:7])) and len(value_tab[i+2]) == 0:
-                    value_tab.pop((i+2))
-                    print("Asteroid {}".format(i))
+                value_tab.pop((i+2))
+                print("Asteroid {}".format(i))
             else:
                 continue
         else:
             continue
-    
+
     p = [(7, 8), (8, 9)]
-    
+
     if c == '10':
         p = p[0]
     elif c == '11':
         p = p[1]
     else:
         pass
-    
+
     for i in range(7, len(value_tab)):
         if i < len(value_tab)-10:
             if len(value_tab[i]) < 9 and (any(char.isdigit() for char in value_tab[i]) and any(char.isalpha() for char in value_tab[i])) and len(value_tab[i-1]) == 0 and len(value_tab[i+1]) == 0:
@@ -299,7 +285,7 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-    
+
     for i in tqdm(range(len(value_tab))):
         if i < len(value_tab)-10:
             if not isNaN(value_tab[i]):
@@ -332,28 +318,22 @@ with open(CSS3_URL + "NEA Lightcurve Analysis at the Center for Solar System Stu
                 continue
         else:
             continue
-                                                                 
-   
-    # if not (len(value_tab[-int(c)]) == 0 or all(char.isdigit() for char in value_tab[-int(c)])):
-    #            value_tab.insert(-int(c)+1, " ")
-    
+
     test_list = [value_tab[n:n+int(c)] for n in range(0, len(value_tab), int(c))]
-    
-    
 
 i = [(4, 5), (5, 6)]
-    
+
 if c == '10':
     i = i[0]
 elif c == '11':
     i = i[1]
 else:
-    pass    
+    pass
 
 number = [value_tab[i] for i in range(0, len(value_tab), int(c))]
 
-name = [value_tab[i] for i in range(1, len(value_tab), int(c))]           
-        
+name = [value_tab[i] for i in range(1, len(value_tab), int(c))]
+
 L = [value_tab[i] for i in range(i[0], len(value_tab), int(c))]
 
 B = [value_tab[i] for i in range(i[1], len(value_tab), int(c))]

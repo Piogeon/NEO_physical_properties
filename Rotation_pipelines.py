@@ -6,6 +6,8 @@ Created on Mon May 23 10:43:33 2022
 """
 
 import pandas as pd
+import os
+os.chdir('./new-earn')
 
 from function.is_nan import isNaN
 from function.format_rotation import format_rotation
@@ -14,9 +16,9 @@ from function.write_fdf import write_fdf
 
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
-CSS3_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/'
+CSS3_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/')
 
-NEAPS_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article'
+NEAPS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article'
              '/Lowell Observatory NEAPS/')
 
 # REFERENCE
@@ -25,8 +27,9 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt',
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 # CS3
 
@@ -35,12 +38,12 @@ numb = [1, 2, 3, 4, 5, 6, 12]
 
 for i in range(len(numb)):
     if i == 0:
-        df_sv = pd.read_csv(CSS3_URL + 'tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]), float_precision='round_trip', dtype='str')
+        df_sv = pd.read_csv(CSS3_URL + '/tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]), float_precision='round_trip', dtype='str')
         df_CS3 = format_rotation(df_sv)
         df_CS3["Reference"] = ref["ID"][0][2:]
 
     else:
-        df_sv = pd.read_csv(CSS3_URL + 'tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]),  float_precision='round_trip', dtype='str')
+        df_sv = pd.read_csv(CSS3_URL + '/tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]),  float_precision='round_trip', dtype='str')
         sv_prova = format_rotation(df_sv)
         if i == 1:
             sv_prova["Reference"] = ref["ID"][1][2:]
@@ -67,7 +70,7 @@ else:
 
 for k in range(1, 5):
     if k == 1:
-        df_sv = pd.read_csv(NEAPS_URL + 'tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(k),  float_precision='round_trip', dtype='str')
+        df_sv = pd.read_csv(NEAPS_URL + '/tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(k),  float_precision='round_trip', dtype='str')
         df_sv.rename(columns={'Period (h)': 'Period(h)'}, inplace=True)
 
         # Clean the column if there are other useless information

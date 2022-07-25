@@ -8,6 +8,8 @@ Created on Wed May 11 10:02:11 2022
 
 import pandas as pd
 import numpy as np
+import os
+os.chdir('./new-earn')
 from function.is_nan import isNaN
 from function.protolog import protolog
 import tabula
@@ -18,9 +20,9 @@ from function.are_there_NEO import are_there_NEO
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
 
-SKYM_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/'
+SKYM_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/')
 
-PRAV_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/'
+PRAV_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/'
             'Article/Binary_asteroid_parameters/')
 
 # REFERENCE
@@ -29,13 +31,14 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt',
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 
 # SKYMAPPER
 
-df = pd.read_csv(SKYM_URL + 'SkyMapper_data.csv')
+df = pd.read_csv(SKYM_URL + '/SkyMapper_data.csv')
 df_SKYM = pd.DataFrame(columns=["Number", "Name", "Prov.Desig", "Type",
                                 "Value", "Lower", "Upper", "Uncert.", "Ref"])
 df_SKYM["Number"] = df['Number']
@@ -55,7 +58,7 @@ df_SKYM.reset_index(drop=True, inplace=True)
 
 # PRAVEC
 
-dfs = tabula.read_pdf(PRAV_URL + 'Pravec_93_ast.pdf', pages='8-9',
+dfs = tabula.read_pdf(PRAV_URL + '/Pravec_93_ast.pdf', pages='8-9',
                       pandas_options={'header': None})
 df = dfs[0]
 df.rename(columns={0: 'Name 1', 1: 'Name 2', 5: 'Value 1', 6: 'Value 2'},

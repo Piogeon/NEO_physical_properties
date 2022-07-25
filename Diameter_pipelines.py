@@ -7,13 +7,13 @@ Created on Tue May 17 10:16:05 2022
 
 import pandas as pd
 import tabula
-
+import os
+os.chdir('./new-earn')
 from function.is_nan import isNaN
 from function.protolog import protolog
 from function.are_there_NEO import are_there_NEO
 from function.neowise_clean_dataset import neowise_clean_dataset
 from function.neorocks_diam import neorocks_diam
-# from function.simda_dataset import simda_dataset
 from function.write_fdf import write_fdf
 
 
@@ -28,10 +28,7 @@ NEOW67_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals
             'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=ygeoS3ZTvvJ%2FIhkYV8qfyGHrHP8%3D',
             'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=o7vtFE8LTeO%2FGtBP91CxDnRlnCA%3D']
 
-NEOR_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/'
-            'NEOROCKS/')
-
-SIMD_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SiMDA/'
+NEOR_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/NEOROCKS/')
 
 # REFERENCE
 
@@ -39,8 +36,9 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt',
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 
 # NEOWISE 4-5 years
@@ -62,9 +60,10 @@ df_NEOW = pd.concat([df_NEOW45, df_NEOW67]).reset_index(drop=True)
 
 # NEOROCKS
 
-dfs = tabula.read_pdf(NEOR_URL + 'Spectral properties of near-Earth objects'
+dfs = tabula.read_pdf(NEOR_URL + '/Spectral properties of near-Earth objects'
                       ' with low-Jovian Tisserand invariant -'
                       ' Simon et al 2021 - 150 NEAs.pdf', pages='18-20')
+
 
 df = dfs[0]
 df.rename(columns={'Designation': 'Number', 'pv': 'Albedo', 'D eq': 'Diam.'}, inplace=True)
@@ -122,25 +121,6 @@ for i in range(len(df_NEOR)):
 df_NEOR.drop(idx, axis=0, inplace=True)
 
 df_NEOR.reset_index(drop=True, inplace=True)
-
-# SIMDA
-
-# df = pd.read_csv(SIMD_URL + 'SiMDA_220510.csv')
-# df.rename(columns={'NUM': 'Number', 'DESIGNATION': 'Prov.Desig',
-#                    'DIAM': 'Diam.', 'D.E': 'Uncert.D.'}, inplace=True)
-# df.drop(df[(df['DYN'] != 'NEA') & (df['DYN'] != 'AMO') &
-#            (df['DYN'] != 'APO')].index, inplace=True)
-# df = df.reset_index(drop=True)
-# df_SIMD = pd.DataFrame(df, columns=("Number", "Name", "Prov.Desig",
-#                                     "Albedo", "Lower A.", "Upper A.",
-#                                     "Uncert.A.", "Approx A.",
-#                                     "Diam.", "Lower D.", "Upper D.",
-#                                     "Uncert.D.", "Approx D.",
-#                                     "X", "Y", "Z", "Radar",
-#                                     "Multiple System", "Ref."))
-
-# df_SIMD = simda_dataset(df_SIMD)
-# df_SIMD["Ref."] = ref["ID"][4]
 
 # MERGE DATASET
 

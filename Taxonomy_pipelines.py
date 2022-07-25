@@ -8,6 +8,9 @@ Created on Wed May  4 11:22:30 2022
 import pandas as pd
 import numpy as np
 import tabula
+import os
+os.chdir('./new-earn')
+
 from function.format_clean_dataset import format_clean_dataset
 from function.is_nan import isNaN
 from function.protolog import protolog
@@ -26,17 +29,15 @@ MITH_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1
 
 MANO_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/158/5/196/revision1/ajab43ddt5_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1656581845&Signature=m%2BHSDLz5ofURu7%2BS3%2B%2FP6oMKI54%3D')
 
-SDSS_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SDSS/'
+SDSS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SDSS/')
 
-SKYM_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/'
+SKYM_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/')
 
-SIMD_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SiMDA/'
+SIMD_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SiMDA/')
 
-NEOR_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/'
-            'NEOROCKS/')
+NEOR_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/NEOROCKS/')
 
-PRAV_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/'
-            'Binary_asteroid_parameters/')
+PRAV_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/Binary_asteroid_parameters/')
 
 
 # REFERENCE
@@ -46,9 +47,10 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt', names=colname,
-                  colspecs=colwidth, header=None)
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
+                  names=colname, colspecs=colwidth, header=None)
 
 # MITHNEOS
 
@@ -107,7 +109,7 @@ df_MANO.reset_index(drop=True, inplace=True)
 
 # SDSS
 
-df = pd.read_csv(SDSS_URL + 'SDSS_data.csv')
+df = pd.read_csv(SDSS_URL + '/SDSS_data.csv')
 df.rename(columns={'Name': 'Prov.Desig', 'grcomplex': 'Taxon'}, inplace=True)
 
 df_SDSS = pd.DataFrame(df, columns=("Number", "Name", "Prov.Desig",
@@ -128,7 +130,7 @@ df_SDSS.reset_index(drop=True, inplace=True)
 
 # SKYMAPPER Dataset
 
-df = pd.read_csv(SKYM_URL + 'SkyMapper_data.csv')
+df = pd.read_csv(SKYM_URL + '/SkyMapper_data.csv')
 df.rename(columns={'Name': 'Prov.Desig', 'complex': 'Taxon'}, inplace=True)
 
 df_SKYM = pd.DataFrame(df, columns=("Number", "Name", "Prov.Desig",
@@ -148,38 +150,9 @@ else:
 df_SKYM.reset_index(drop=True, inplace=True)
 
 
-# SIMDA
-
-# df = pd.read_csv(SIMD_URL + 'SiMDA_220510.csv')
-# df.rename(columns={'NUM': 'Number', 'DESIGNATION': 'Prov.Desig',
-#                    'T.D': 'Taxon'}, inplace=True)
-
-# df.drop(df[(df['DYN'] != 'NEA') & (df['DYN'] != 'AMO') &
-#            (df['DYN'] != 'APO')].index, inplace=True)
-
-# df = df.reset_index(drop=True)
-
-# df_SIMD = pd.DataFrame(df, columns=("Number", "Name", "Prov.Desig",
-#                                     "Taxon", "Approx.Value", "Ref"))
-
-# df_SIMD = format_clean_dataset(df_SIMD)
-
-# df_SIMD["Ref"] = df_SIMD["Ref"].replace(np.nan, ref["ID"][4])
-# df_SIMD["Taxon"] = df_SIMD["Taxon"].replace('-', '')
-
-# list_non_NEO, idx = are_there_NEO(df_SIMD)
-
-
-# if len(list_non_NEO) != 0:
-#     df_SIMD.drop(idx, axis=0, inplace=True)
-# else:
-#     print('All the objects are NEOs')
-
-# df_SIMD.reset_index(drop=True, inplace=True)
-
 # NEOROCKS
 
-dfs = tabula.read_pdf(NEOR_URL + 'Spectral properties of near-Earth objects'
+dfs = tabula.read_pdf(NEOR_URL + '/Spectral properties of near-Earth objects'
                       ' with low-Jovian Tisserand invariant -'
                       ' Simon et al 2021 - 150 NEAs.pdf', pages='18-20')
 
