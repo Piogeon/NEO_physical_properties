@@ -7,7 +7,6 @@ Created on Mon May 23 10:43:33 2022
 
 import pandas as pd
 import os
-os.chdir('./new-earn')
 
 from function.is_nan import isNaN
 from function.format_rotation import format_rotation
@@ -368,4 +367,4 @@ colspecs = [
     "{: <2} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/rotation.txt", df_total, colspecs)
+write_fdf("./Output/Rotation.txt", df_total, colspecs)

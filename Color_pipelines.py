@@ -9,7 +9,7 @@ Created on Wed May 11 10:02:11 2022
 import pandas as pd
 import numpy as np
 import os
-os.chdir('./new-earn')
+
 from function.is_nan import isNaN
 from function.protolog import protolog
 import tabula
@@ -118,6 +118,6 @@ colspecs = [
     "{: <3} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/Color.txt", df_total, colspecs)
+write_fdf("./Output/Color.txt", df_total, colspecs)
 
 protolog("inf", "Color database ready")

@@ -6,6 +6,7 @@ Created on Tue Jun 21 08:53:09 2022
 """
 
 import pandas as pd
+import os
 
 from function.are_there_NEO import are_there_NEO
 from function.format_spin_vector import format_spin_vector
@@ -13,10 +14,9 @@ from function.write_fdf import write_fdf
 
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
-CSS3_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/'
+CSS3_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/')
 
-NEAPS_URL = ('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article'
-             '/Lowell Observatory NEAPS/')
+NEAPS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/Lowell Observatory NEAPS/')
 
 # REFERENCE
 
@@ -24,8 +24,9 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-ref = pd.read_fwf('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/'
-                  'Programs/Primary_Pipelines/Reference.txt',
+REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+
+ref = pd.read_fwf(REF_URL + '/Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 # CS3
 
@@ -33,12 +34,12 @@ numb = [1, 2, 3, 4, 5, 6, 12]
 
 for i in range(len(numb)):
     if i == 0:
-        df_sv = pd.read_csv(CSS3_URL + 'tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]))
+        df_sv = pd.read_csv(CSS3_URL + '/tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]))
         df_CS3 = format_spin_vector(df_sv)
         df_CS3["Reference"] = ref["ID"][0][2:]
 
     else:
-        df_sv = pd.read_csv(CSS3_URL + 'tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]))
+        df_sv = pd.read_csv(CSS3_URL + '/tabula-NEA Lightcurve Analysis at the Center for Solar System Studies_{}.csv'.format(numb[i]))
         sv_prova = format_spin_vector(df_sv)
         if i == 1:
             sv_prova["Reference"] = ref["ID"][1][2:]
@@ -65,7 +66,7 @@ else:
 
 for i in range(1, 5):
     if i == 1:
-        df_sv = pd.read_csv(NEAPS_URL + 'tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(i))
+        df_sv = pd.read_csv(NEAPS_URL + '/tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(i))
         df_NEAPS = format_spin_vector(df_sv)
 
         df_NEAPS["LPAB"] = df_NEAPS["LPAB"].astype(str)
@@ -93,7 +94,7 @@ for i in range(1, 5):
                 continue
         df_NEAPS["Reference"] = ref["ID"][6][2:]
     else:
-        df_sv = pd.read_csv(NEAPS_URL + 'tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(i))
+        df_sv = pd.read_csv(NEAPS_URL + '/tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(i))
         sv = format_spin_vector(df_sv)
 
         sv["LPAB"] = sv["LPAB"].astype(str)
@@ -184,4 +185,4 @@ colspecs = [
     "{: <4} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/spin_vector.txt", df_total, colspecs)
+write_fdf("./Output/Spin_vector.txt", df_total, colspecs)

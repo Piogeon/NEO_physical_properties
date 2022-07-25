@@ -9,19 +9,12 @@ import pandas as pd
 import numpy as np
 import tabula
 import os
-os.chdir('./new-earn')
 
 from function.format_clean_dataset import format_clean_dataset
 from function.is_nan import isNaN
 from function.protolog import protolog
 from function.write_fdf import write_fdf
 from function.are_there_NEO import are_there_NEO
-
-
-# Change the current working directory
-# os.chdir('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/
-# Primary_Pipelines')
-
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
 
@@ -217,6 +210,6 @@ colspecs = [
     "{: <2} ",
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/taxonomy.txt", df_total, colspecs)
+write_fdf("./Output/Taxonomy.txt", df_total, colspecs)
 
 protolog("inf", "Taxonomy database ready")

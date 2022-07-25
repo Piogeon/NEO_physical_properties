@@ -8,7 +8,7 @@ Created on Tue May 17 10:16:05 2022
 import pandas as pd
 import tabula
 import os
-os.chdir('./new-earn')
+
 from function.is_nan import isNaN
 from function.protolog import protolog
 from function.are_there_NEO import are_there_NEO
@@ -186,6 +186,6 @@ colspecs = [
     "{: <2} ",
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/Diameter_Albedo.txt", df_total, colspecs)
+write_fdf("./Output/Diameter_Albedo.txt", df_total, colspecs)
 
 protolog("inf", "Diam database ready")
