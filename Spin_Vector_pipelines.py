@@ -24,9 +24,9 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+# REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
 
-ref = pd.read_fwf(REF_URL + '/Reference.txt',
+ref = pd.read_fwf('./Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 # CS3
 
