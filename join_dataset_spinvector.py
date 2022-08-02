@@ -8,6 +8,7 @@ Created on Wed Jun 22 14:11:30 2022
 import pandas as pd
 import re
 import numpy as np
+import os
 from astroquery.jplsbdb import SBDB
 from function.has_numbers import has_numbers
 from function.is_nan import isNaN
@@ -16,14 +17,14 @@ from function.start_space import start_space
 from function.write_fdf import write_fdf
 from function.are_there_NEO import are_there_NEO
 
-EARN_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/EARN/D5_EARN_data/D5_EARN_data/'
-EARN_NEW_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/'
+EARN_URL = os.path.dirname('./Old_EARN/')
+EARN_NEW_URL = os.path.dirname('./Output/')
 
 COLWIDTH = [(0, 6), (7, 35), (36, 48), (49, 63), (64, 79)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Spin Vector", "Ref"]
 
-earn = pd.read_fwf(EARN_URL + 'spinvector.txt',
+earn = pd.read_fwf(EARN_URL + '/spinvector.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=42,
                                   dtype='str', keep_default_na=False)
 
@@ -78,7 +79,7 @@ COLWIDTH = [(0, 7), (8, 36), (37, 49), (50, 55), (56, 61), (62, 66)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "LPAB", "BPAB", "Ref"]
 
-earn_new = pd.read_fwf(EARN_NEW_URL + 'spin_vector.txt',
+earn_new = pd.read_fwf(EARN_NEW_URL + '/spin_vector.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None,
                                   dtype='str', keep_default_na=False)
 
@@ -114,5 +115,5 @@ colspecs = [
     "{: <4} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/spin_vector_ALL.txt", df_total, colspecs)
+write_fdf("./Output/spin_vector_ALL.txt", df_total, colspecs)
 

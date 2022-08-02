@@ -8,6 +8,7 @@ Created on Tue May 24 11:07:39 2022
 import pandas as pd
 import re
 import numpy as np
+import os
 from astroquery.jplsbdb import SBDB
 from function.has_numbers import has_numbers
 from function.is_nan import isNaN
@@ -16,14 +17,14 @@ from function.start_space import start_space
 from function.write_fdf import write_fdf
 from function.are_there_NEO import are_there_NEO
 
-EARN_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/EARN/D5_EARN_data/D5_EARN_data/'
-EARN_NEW_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/'
+EARN_URL = os.path.dirname('./Old_EARN/')
+EARN_NEW_URL = os.path.dirname('./Output/')
 
 COLWIDTH = [(0, 6), (7, 35), (36, 48), (49, 58), (59, 74), (75, 84), (85, 100), (101, 110), (111, 126), (127, 136), (137, 160)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "U-V", "Ref 1", "B-V", "Ref 2", "V-R", "Ref 3", "R-I", "Ref 4"]
 
-earn = pd.read_fwf(EARN_URL + 'color.txt',
+earn = pd.read_fwf(EARN_URL + '/color.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=315)
 
 df_1 = pd.DataFrame(earn, columns=["Number", "Name", "Prov.Desig", "U-V", "Value", "Ref 1"])
@@ -87,7 +88,7 @@ COLWIDTH = [(0, 7), (8, 36), (37, 49), (50, 53), (54, 61), (62, 69), (70, 77), (
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Type", "Value", "Lower", "Upper", "Uncert", "Ref"]
 
-earn_new = pd.read_fwf(EARN_NEW_URL + 'color.txt',
+earn_new = pd.read_fwf(EARN_NEW_URL + '/color.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None)
 
 df_total = pd.concat([df_earn_old, earn_new]).reset_index(drop=True)
@@ -141,7 +142,7 @@ colspecs = [
     "{: <3} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/Color_ALL.txt", df_total, colspecs)
+write_fdf("./Output/Color_ALL.txt", df_total, colspecs)
 
 protolog("inf", "Color database ready")
 

@@ -18,15 +18,15 @@ from function.write_fdf import write_fdf
 
 
 # LOADING URLS FOR DATASETS FOR DIAMETER and ALBEDO
-NEOW45_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657268583&Signature=1LmUgV%2FVXhlqWzp7G3Cdz1ObaO8%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657268583&Signature=ZbcQgLCVC9XXlZPkabDvzciq2fk%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657268583&Signature=ljFV6m8BXbrvpmZBiHWR8oKsY%2F4%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657268583&Signature=gWkhD%2F6zamu5qklbbENYO5ECEFo%3D']
+NEOW45_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=43F0kmV%2FzDaa9GkHRHJo25ZrTfk%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=I23O%2F2H6wXsKaF%2FpR7yfR%2F%2FhabM%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=xVFoTiBTmenAGR%2Bc74cZ%2FCC8bTQ%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=JrKAYdfCV9gqC03rIBsEGbbqQWg%3D']
 
-NEOW67_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=AUWHumHgvq8xzCnT%2BS6bCZrZs%2BU%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=SdTren%2B%2BS%2FprTHnSskSXiZ2BBcE%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=ygeoS3ZTvvJ%2FIhkYV8qfyGHrHP8%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1657267447&Signature=o7vtFE8LTeO%2FGtBP91CxDnRlnCA%3D']
+NEOW67_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=vf1P88J3W7BGy92JXFJHJ9E7qQY%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=vDGltDrzbBeP36eGuRYYSduaNEk%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=z0M6cXW%2BMlWboqvXRqPuUMqu0nE%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=1cLSQA7%2FxAeQuxADkTJWHZoTFB4%3D']
 
 NEOR_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/NEOROCKS/')
 
@@ -36,15 +36,15 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+# REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
 
-ref = pd.read_fwf(REF_URL + '/Reference.txt',
+ref = pd.read_fwf('./Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 
 # NEOWISE 4-5 years
 
 df_NEOW45 = neowise_clean_dataset(NEOW45_URL)
-df_NEOW45["Ref."] = ref["ID"][10][2:]
+df_NEOW45[0]["Ref."] = ref["ID"][10][2:]
 
 
 # NEOWISE 6-7 years
@@ -53,10 +53,10 @@ idx67 = []
 neo67 = []
 
 df_NEOW67 = neowise_clean_dataset(NEOW67_URL)
-df_NEOW67["Ref."] = ref["ID"][11][2:]
+df_NEOW67[0]["Ref."] = ref["ID"][11][2:]
 
 
-df_NEOW = pd.concat([df_NEOW45, df_NEOW67]).reset_index(drop=True)
+df_NEOW = pd.concat([df_NEOW45[0], df_NEOW67[0]]).reset_index(drop=True)
 
 # NEOROCKS
 

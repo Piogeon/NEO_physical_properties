@@ -8,6 +8,7 @@ Created on Wed May 25 10:06:51 2022
 import pandas as pd
 import re
 import numpy as np
+import os
 from astroquery.jplsbdb import SBDB
 from function.has_numbers import has_numbers
 from function.is_nan import isNaN
@@ -16,14 +17,14 @@ from function.start_space import start_space
 from function.write_fdf import write_fdf
 from function.are_there_NEO import are_there_NEO
 
-EARN_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/EARN/D5_EARN_data/D5_EARN_data/'
-EARN_NEW_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/'
+EARN_URL = os.path.dirname('./Old_EARN/')
+EARN_NEW_URL = os.path.dirname('./Output/')
 
 COLWIDTH = [(0, 6), (7, 35), (36, 48), (49, 58), (59, 88), (89, 103), (104, 140)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Albedo", "Ref 1", "Diameter", "Ref 2"]
 
-earn = pd.read_fwf(EARN_URL + 'diameter.txt',
+earn = pd.read_fwf(EARN_URL + '/diameter.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=1745,
                                   dtype='str', keep_default_na=False)
 
@@ -272,7 +273,7 @@ COLNAME = ["Number", "Name", "Prov.Desig", "Albedo", "Lower A.", "Upper A.",
            "Uncert.A.", "Approx A.", "Diameter", "Lower D.", "Upper D.",
            "Uncert.D.", "Approx D.", "X", "Y", "Z", "Radar", "Multiple System", "Ref."]
 
-earn_new = pd.read_fwf(EARN_NEW_URL + 'Diameter_Albedo.txt',
+earn_new = pd.read_fwf(EARN_NEW_URL + '/Diameter_Albedo.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None,
                                   dtype='str', keep_default_na=False)
 
@@ -332,7 +333,12 @@ while i < len(df_total):
     df_total.iloc[idx[0]:idx[-1]+1] = df_test
     i = idx[-1] + 1
 
-
+for i in range(len(df_total)):
+    if len(df_total.at[i, "Radar"]) == 0:
+        df_total.at[i, "Radar"] = 'N'
+    else:
+        continue
+    
 colspecs = [
     "{: <7} ",                                                  # left, width=6
     "{: <28} ",
@@ -355,7 +361,7 @@ colspecs = [
     "{: <2} ",
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/Diameter_Albedo_ALL.txt", df_total, colspecs)
+write_fdf("./Output/Diameter_Albedo_ALL.txt", df_total, colspecs)
 
 protolog("inf", "Diam database ready")
 

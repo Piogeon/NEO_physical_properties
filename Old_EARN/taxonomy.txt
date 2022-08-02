@@ -1,0 +1,838 @@
+Nr     Name                         Prov.Desig     Taxon1   Ref  Taxon_al Refs
+       1991 TF3                     1991 TF3       Scomp    E51  Scomp    E51
+       1991 XB                      1991 XB        K        996  K;SX     996,665    
+       1992 UB                      1992 UB        X        665  X        665    
+       1993 TQ2                     1993 TQ2       Sa       539  Sa       539,664
+       1994 AW1                     1994 AW1       Sa       539  Sa       539,664
+       1994 CJ1                     1994 CJ1       A        H88  A        H88    
+       1994 XD                      1994 XD        Q        F82  Q        F82
+       1996 FQ3                     1996 FQ3       Sq       539  Sq       539,664
+       1996 JA1                     1996 JA1       V        181  V        181
+       1997 AC11                    1997 AC11      Xc       539  Xc       539,664
+       1997 GL3                     1997 GL3       V        539  V        539,664
+       1997 QK1                     1997 QK1       Sq       540  SQ       540
+       1997 RT                      1997 RT        O        664  O;Q      539,664
+       1997 TT25                    1997 TT25      Sq       539  Sq       539,664
+       1997 UH9                     1997 UH9       Sq       664  Sq,S     539,614,664,A45
+       1997 VM4                     1997 VM4       Q        540  Q        540
+       1997 YM3                     1997 YM3       C        996  C        996
+       1998 BM10                    1998 BM10      Sq       539  Sq       539
+       1998 BT13                    1998 BT13      Sq       539  Sq       539
+       1998 HD14                    1998 HD14      Q        540  Q        540
+       1998 HT31                    1998 HT31      C:       664  C:       664  
+       1998 ME3                     1998 ME3       F        540  F        540
+       1998 MW5                     1998 MW5       Sq       539  Sq       539
+       1998 QA1                     1998 QA1       C        540  C        540
+       1998 QC1                     1998 QC1       S        540  S        540
+       1998 QK28                    1998 QK28      C        540  C        540
+       1998 QR15                    1998 QR15      Sq       664  Sq;Q     539,664,540
+       1998 QV3                     1998 QV3       Q        540  Q        540
+       1998 SG2                     1998 SG2       Sq       539  Sq       539,664
+       1998 SJ70                    1998 SJ70      Q        E51  Q        E51
+       1998 WB2                     1998 WB2       S        510  S        510,540
+       1998 WZ1                     1998 WZ1       Q        540  Q        540
+       1999 AF4                     1999 AF4       C        996  C        996,997
+       1999 CW8                     1999 CW8       B        664  B        664    
+       1999 DB2                     1999 DB2       Sq       664  Sq       664    
+       1999 DY2                     1999 DY2       Sr       664  Sr       664    
+       1999 EE5                     1999 EE5       S        539  S        539,664
+       1999 FA                      1999 FA        S        539  S        539,666
+       1999 FN19                    1999 FN19      Sq       666  Sq       666    
+       1999 JE1                     1999 JE1       Sq       539  Sq       539
+       1999 JO8                     1999 JO8       S        539  S        539
+       1999 LT1                     1999 LT1       C        996  C,F      996,997
+       1999 MN                      1999 MN        Sq       A43  Sq       A43,A58
+       1999 RB32                    1999 RB32      V        539  V        539
+       1999 SE10                    1999 SE10      X        539  X        539
+       1999 SK10                    1999 SK10      Sq       539  Sq       539
+       1999 TY2                     1999 TY2       S        510  S        510       
+       1999 VN6                     1999 VN6       C        539  C        539
+       1999 VR6                     1999 VR6       S        H88  S        H88    
+       1999 YD                      1999 YD        Sk       539  Sk       539
+       1999 YG3                     1999 YG3       S        539  S        539
+       2000 AC6                     2000 AC6       Q        539  Q        539
+       2000 AE205                   2000 AE205     S        539  S        539
+       2000 AH205                   2000 AH205     Sk       539  Sk       539
+       2000 AX93                    2000 AX93      Sq       539  Sq       539
+       2000 BG19                    2000 BG19      X        664  X        664
+       2000 CE59                    2000 CE59      L        664  L        664    
+       2000 CN33                    2000 CN33      X        664  X        664    
+       2000 DO1                     2000 DO1       V        664  V        664   
+       2000 DO8                     2000 DO8       S:       664  S:       664    
+       2000 EB107                   2000 EB107     D        996  D        996,997
+       2000 EW70                    2000 EW70      F        540  F        540
+       2000 GF2                     2000 GF2       S/Sr     E51  S/Sr     E51  
+       2000 GU127                   2000 GU127     S:       664  S:       664    
+       2000 GV127                   2000 GV127     S:       664  S:       664    
+       2000 JQ66                    2000 JQ66      R        664  R        664    
+       2000 KL33                    2000 KL33      S        664  S        664    
+       2000 LF6                     2000 LF6       D        996  D        996,997
+       2000 PG3                     2000 PG3       D        664  D        664    
+       2000 QN130                   2000 QN130     C        614  C        614,A45
+       2000 QW7                     2000 QW7       Sq/Q     E51  Sq/Q     E51  
+       2000 RS11                    2000 RS11      Sa       614  Sa       614,A45
+       2000 SL                      2000 SL        S/Sr     E51  S/Sr     E51  
+       2000 SY162                   2000 SY162     Sq:      664  Sq:      664    
+       2000 TJ1                     2000 TJ1       Sq       D81  Sq       D81
+       2000 TU28                    2000 TU28      S/Sr     E51  S/Sr     E51  
+       2000 UJ1                     2000 UJ1       S        A37  S,Xk     A37,A39,A58
+       2000 WC67                    2000 WC67      X        664  X        664    
+       2000 WJ10                    2000 WJ10      Xk       664  Xk       664    
+       2000 WJ63                    2000 WJ63      Sq       664  Sq       664    
+       2000 WK10                    2000 WK10      X        664  X        664    
+       2000 WL10                    2000 WL10      Xc       664  Xc       664    
+       2000 WL63                    2000 WL63      S        664  S        664    
+       2000 WM63                    2000 WM63      S        664  S        664    
+       2000 YA                      2000 YA        Sk       664  Sk       664    
+       2000 YF29                    2000 YF29      S        666  S        666  
+       2000 YO29                    2000 YO29      C        664  C        664    
+       2001 EC                      2001 EC        Sq       664  Sq       664    
+       2001 FE90                    2001 FE90      A        A42  A        A42,A58
+       2001 HA8                     2001 HA8       C:       664  C:       664    
+       2001 HC                      2001 HC        Sq       D81  Sq       D81
+       2001 HK31                    2001 HK31      X        664  X        664    
+       2001 HW15                    2001 HW15      X        664  X        664    
+       2001 JV1                     2001 JV1       Sq       664  Sq       664   
+       2001 MF1                     2001 MF1       Sk       664  Sk       664  
+       2001 OE84                    2001 OE84      S        664  S        664    
+       2001 PD1                     2001 PD1       K:       664  K:       664    
+       2001 QA143                   2001 QA143     Sk       664  Sk       664    
+       2001 QC34                    2001 QC34      Q        876  Q,O      876
+       2001 QP181                   2001 QP181     Scomp    E51  Scomp    E51  
+       2001 RB18                    2001 RB18      C        614  C        614,A45
+       2001 SG286                   2001 SG286     D        666  D        666    
+       2001 SJ262                   2001 SJ262     C:       664  C:       664    
+       2001 TC45                    2001 TC45      Sq       664  Sq       664    
+       2001 TY44                    2001 TY44      X        664  X        664    
+       2001 UC5                     2001 UC5       X        664  X        664  
+       2001 UG18                    2001 UG18      S        H88  S        H88    
+       2001 UU92                    2001 UU92      T        664  T        664  
+       2001 WH2                     2001 WH2       X        664  X        664    
+       2001 XP1                     2001 XP1       P        996  P        996
+       2001 XS1                     2001 XS1       Cb       664  Cb       664    
+       2001 XU30                    2001 XU30      Sq       664  Sq       664    
+       2001 XY10                    2001 XY10      Sk       664  Sk       664    
+       2001 YE1                     2001 YE1       T        664  T        664    
+       2001 YK4                     2001 YK4       X:       664  X:       664    
+       2002 AH29                    2002 AH29      K        664  K        664    
+       2002 AK14                    2002 AK14      V:       664  V:       664    
+       2002 AL14                    2002 AL14      Sl       A45  Ld,Sl    664,A45    
+       2002 AL31                    2002 AL31      X        666  X        666    
+       2002 AQ2                     2002 AQ2       S        664  S        664    
+       2002 AT4                     2002 AT4       D        666  D        666  
+       2002 AU5                     2002 AU5       X        664  X        664    
+       2002 AV                      2002 AV        S        E51  K;S      664,E51
+       2002 BA1                     2002 BA1       S        664  S        664    
+       2002 BM26                    2002 BM26      X        664  X        664    
+       2002 BP26                    2002 BP26      X        664  X        664    
+       2002 CS11                    2002 CS11      X:       664  X:       664    
+       2002 CT46                    2002 CT46      Sr       664  Sr       664    
+       2002 DH2                     2002 DH2       Ch       664  Ch       664    
+       2002 DO3                     2002 DO3       X:       664  X:       664    
+       2002 DQ3                     2002 DQ3       Sq       666  Sq       666    
+       2002 DU3                     2002 DU3       Sq       666  Sq       666    
+       2002 DY3                     2002 DY3       Xk       664  Xk       664    
+       2002 EA                      2002 EA        L        664  L        664    
+       2002 EC                      2002 EC        X:       664  X:       664   
+       2002 GO5                     2002 GO5       Sq/Q     E51  Sq,Q     D81,E51
+       2002 NP1                     2002 NP1       Q        B34  Q        B34
+       2002 NX18                    2002 NX18      C        A45  C        A45
+       2002 NY40                    2002 NY40      Q        E51  Q        843,E51
+       2002 OS4                     2002 OS4       Sr       D81  Sr       D81
+       2002 QH10                    2002 QH10      S/Sr     E51  S/Sr     E51  
+       2002 RQ25                    2002 RQ25      C/X      D81  C/X      D81
+       2002 TB9                     2002 TB9       Sk       A45  Sk       A45
+       2002 TD60                    2002 TD60      S        A45  S        A45
+       2002 TP69                    2002 TP69      Sk       A45  Sk       A45
+       2002 TS67                    2002 TS67      Xe       A45  Xe       A45
+       2002 UN                      2002 UN        B        A45  B        A45
+       2002 VE68                    2002 VE68      X        A93  X        A93
+       2002 VP69                    2002 VP69      Sq       A45  Sq       A45
+       2002 VX17                    2002 VX17      S-       A45  S-       A45
+       2002 XO14                    2002 XO14      S        996  S        996
+       2002 YB12                    2002 YB12      Sq       A45  Sq       A45
+       2003 AJ73                    2003 AJ73      S/Sr     E51  S/Sr     E51  
+       2003 ED50                    2003 ED50      Scomp    E51  Scomp    E51  
+       2003 FS2                     2003 FS2       Cg       A45  Cg       A45
+       2003 FT3                     2003 FT3       S/Sr     E51  V;S/Sr   692,A45,E51
+       2003 FU3                     2003 FU3       V        692  V        692,A45
+       2003 GJ21                    2003 GJ21      V        692  V        692,A45
+       2003 MJ4                     2003 MJ4       Q        E51  Q        E51  
+       2003 MT9                     2003 MT9       S/Sr     E51  S/Sr     E51  
+       2003 RL10                    2003 RL10      S/Sr     E51  S/Sr     E51  
+       2003 RS1                     2003 RS1       X        996  X        996
+       2003 UV11                    2003 UV11      Q        E51  Q        E51  
+       2003 XM                      2003 XM        T        996  T        996
+       2004 FG11                    2004 FG11      V        A31  V        A31,A58
+       2004 QJ7                     2004 QJ7       Q        E51  Q        E51  
+       2004 RQ10                    2004 RQ10      Sq       F82  Sq       F82
+       2004 SV55                    2004 SV55      Xe       B49  Xe       B49
+       2004 TB18                    2004 TB18      A/S      A89  AS       A89
+       2004 TD10                    2004 TD10      S        E42  S        E42
+       2004 TP1                     2004 TP1       Q        F82  Q;Sq     F82,E51
+       2004 XD50                    2004 XD50      R        A89  R        A89
+       2004 YZ23                    2004 YZ23      P        996  P        996
+       2005 AT42                    2005 AT42      S        996  S        996
+       2005 ED318                   2005 ED318     Q        E51  Q        E51  
+       2005 GU                      2005 GU        S/Sr     E51  S/Sr     E51  
+       2005 RQ6                     2005 RQ6       S/Sr     E51  S/Sr     E51  
+       2005 UL5                     2005 UL5       Scomp    E51  Sq,Scomp D81,E51
+       2005 YU55                    2005 YU55      C        A31  C        A31,A58
+       2006 BN55                    2006 BN55      Scomp    E51  Scomp    E51     
+       2006 DP14                    2006 DP14      X        E18  X,C      E18
+       2006 HQ30                    2006 HQ30      Sq/Q     E51  Sq/Q     E51  
+       2006 NM                      2006 NM        Scomp    E51  Scomp    E51     
+       2006 UL217                   2006 UL217     Scomp    E51  Scomp    E51     
+       2006 UM                      2006 UM        Sq       E51  Sq       E51  
+       2006 UR                      2006 UR        R        A89  R        A89
+       2006 YT13                    2006 YT13      A/R      A89  AR       A89
+       2007 DT103                   2007 DT103     Sq/Q     E51  Sq/Q     E51  
+       2007 LE                      2007 LE        C        C20  C        C20
+       2007 MK13                    2007 MK13      C        A58  C;XT     A58,A89
+       2007 ML13                    2007 ML13      Sl       C93  Sl       C93 
+       2007 RF5                     2007 RF5       Sq       E51  Sq       B34,D81,E51
+       2007 RU17                    2007 RU17      Q        E51  Q        E51  
+       2007 UR3                     2007 UR3       X        A89  X        A89
+       2007 VR183                   2007 VR183     Scomp    E51  Scomp    E51  
+       2008 AF4                     2008 AF4       S/Sr     E51  S/Sr     E51  
+       2008 BT18                    2008 BT18      V        964  V        964
+       2008 CL1                     2008 CL1       Q        E51  Q        E51  
+       2008 DE                      2008 DE        Scomp    E51  Scomp    E51  
+       2008 EE5                     2008 EE5       Sl       A58  Sl       A58
+       2008 EV5                     2008 EV5       C        A58  C;X      A58,A89
+       2008 HS3                     2008 HS3       Q        E51  Q        E51  
+       2008 JT35                    2008 JT35      Scomp    E51  Scomp    E51  
+       2008 QS11                    2008 QS11      Scomp    E51  Scomp    E51  
+       2008 SQ1                     2008 SQ1       Sq       E51  Sq       E51  
+       2008 SV11                    2008 SV11      CX       A58  CX       A58
+       2008 UE7                     2008 UE7       Sq/Q     E51  Sq/Q     E51  
+       2008 YZ32                    2008 YZ32      B        A89  B        A89
+       2009 AV                      2009 AV        S/Sr     E51  S/Sr     E51  
+       2009 DD45                    2009 DD45      S        941  S        941
+       2009 DL46                    2009 DL46      D        H88  D        H88    
+       2009 KC3                     2009 KC3       C/X      A58  CX,C,Xe  A58,A40
+       2009 KD5                     2009 KD5       L        A44  L        A44,A58,A51
+       2009 OG                      2009 OG        S        A58  S        A58
+       2009 QJ9                     2009 QJ9       Scomp    E51  Scomp    E51  
+       2009 SC15                    2009 SC15      V        E49  V        E49 
+       2009 SQ104                   2009 SQ104     Sq       E49  Sq       E49
+       2009 UD2                     2009 UD2       S        A58  S        A58
+       2009 UN3                     2009 UN3       Scomp    E51  S        A34,A58,E51
+       2009 UV18                    2009 UV18      S/Sr     E51  Ld;A;S   A58,A89,E51
+       2009 VY25                    2009 VY25      C        H88  C        H88    
+       2009 WZ104                   2009 WZ104     R        C13  R;Q      C13
+       2009 XR2                     2009 XR2       R        A89  R        A89
+       2010 AE30                    2010 AE30      S        A89  S        A89
+       2010 BB                      2010 BB        Q        F82  Q        F82
+       2010 CM44                    2010 CM44      Sq/Q     E51  Sq/Q     E51  
+       2010 GU21                    2010 GU21      X        A58  X        A58
+       2010 MF1                     2010 MF1       K        A73  K        A73
+       2010 TD54                    2010 TD54      S        A88  S        A88
+       2011 BT15                    2011 BT15      A        E49  A        E49  
+       2011 EZ78                    2011 EZ78      Sq       E51  Sq       E51  
+       2011 HP                      2011 HP        Xc       B19  Xc       B19
+       2011 LJ19                    2011 LJ19      Scomp    E51  Scomp    E51  
+       2011 OV4                     2011 OV4       Q        E51  Q        E51  
+       2011 PS                      2011 PS        Q        E51  Q        E51  
+       2011 UE256                   2011 UE256     S        540  S        540
+       2011 WV134                   2011 WV134     S        C32  S        C32
+       2011 XA3                     2011 XA3       V        E30  S/V      E30
+       2012 BF86                    2012 BF86      S        H88  S        H88    
+       2012 CK2                     2012 CK2       C        H88  C        H88    
+       2012 EG5                     2012 EG5       Ch       C08  Ch       C08
+       2012 JR17                    2012 JR17      X        H88  X        H88    
+       2012 KP24                    2012 KP24      C        C40  C        C40
+       2012 KT42                    2012 KT42      B        C40  B        C40
+       2012 LZ1                     2012 LZ1       P        C33  X        C33
+       2012 NP                      2012 NP        A        H85  A        H85
+       2012 QG42                    2012 QG42      S        D38  S        D38
+       2012 VF37                    2012 VF37      Sq/Sr    F82  Sq/Sr    F82
+       2013 RH74                    2013 RH74      Sq       D83  Sq       D83
+       2014 CR                      2014 CR        Xc       E21  Xc       E21
+       2014 RC11                    2014 RC11      S        H88  S        H88    
+       2014 YS34                    2014 YS34      A        H85  A        H85
+       2015 HB117                   2015 HB117     A        H85  A        H85
+       2015 LH                      2015 LH        A        H85  A        H85
+       2015 OL35                    2015 OL35      S        H88  S        H88    
+       2015 OS35                    2015 OS35      C        H88  C        H88    
+       2015 TB179                   2015 TB179     A        H85  A        H85
+       2015 TW144                   2015 TW144     A        H85  A        H85
+       2015 TX143                   2015 TX143     S        H88  S        H88    
+       2015 YN1                     2015 YN1       S        H88  S        H88    
+       2016 AF165                   2016 AF165     C        H88  C        H88    
+       2016 EM28                    2016 EM28      X        H88  X        H88    
+       2016 FC13                    2016 FC13      Sk       F89  Sk       F89
+       2016 FE1                     2016 FE1       T        F89  T        F89
+       2016 FY3                     2016 FY3       Sk       F89  Sk       F89  
+       2016 GN221                   2016 GN221     X        H88  X        H88    
+       2016 LY47                    2016 LY47      S        H88  S        H88    
+       2016 LZ10                    2016 LZ10      C        H88  C        H88    
+       2016 NV                      2016 NV        S        H88  S        H88    
+503277 2015 RT83                    2015 RT83      S        H88  S        H88    
+482796 2013 QJ10                    2013 QJ10      S        H88  S        H88    
+474238 2001 RU17                    2001 RU17      X        H88  X        H88    
+469722 2005 LP40                    2005 LP40      S        H88  S        H88    
+468741 2010 VM1                     2010 VM1       S        H88  S        H88    
+468540 2006 MD12                    2006 MD12      S        H88  S        H88    
+468468 2004 KH17                    2004 KH17      S        H88  S        H88    
+468452 2003 SD170                   2003 SD170     C        H88  C        H88    
+468005 2012 XD112                   2012 XD112     S        H88  S        H88    
+467527 2007 LA15                    2007 LA15      X        H88  X        H88    
+466508 2014 GY48                    2014 GY48      S        H88  S        H88    
+463282 2012 HR15                    2012 HR15      X        H88  X        H88    
+459046 2012 AS10                    2012 AS10      S        H88  S        H88    
+458723 2011 KQ12                    2011 KQ12      V        H88  V        H88    
+458375 2010 WY8                     2010 WY8       S        H88  S        H88    
+457663 2009 DN1                     2009 DN1       X        H88  X        H88    
+455199 2000 YK4                     2000 YK4       D        H88  D        H88    
+453729 2011 BO24                    2011 BO24      S        H88  S        H88    
+452397 2002 PD130                   2002 PD130     S        H88  S        H88    
+451370 2011 AK5                     2011 AK5       C        H88  C        H88    
+447221 2005 UO5                     2005 UO5       S        H88  S        H88    
+445974 2013 BJ18                    2013 BJ18      S        H88  S        H88    
+444584 2006 UK                      2006 UK        A        H85  A        H85
+443880 2001 UZ16                    2001 UZ16      C        H88  C        H88    
+442243 2011 MD11                    2011 MD11      S        H88  S        H88    
+441987 2010 NY65                    2010 NY65      S        H88  S        H88    
+436771 2012 JG11                    2012 JG11      S        H88  S        H88    
+430804 2005 AD13                    2005 AD13      C        H88  C        H88    
+418416 2008 LV16                    2008 LV16      S        H88  S        H88    
+411201 2010 LJ14                    2010 LJ14      V        H88  V        H88    
+405212 2003 QC10                    2003 QC10      C/Xn     F66  C/Xn     F66
+399774 2005 NB7                     2005 NB7       S/Sr     E51  S/Sr     E51  
+387733 2003 GS                      2003 GS        S        E33  S        E33
+385343 2002 LV                      2002 LV        S/Sr     E51  L,T;QX;S A41,A89,D81,E51
+380455 2003 UL3                     2003 UL3       V/O/Q    F66  V/O/Q    F66
+374855 2006 VQ13                    2006 VQ13      Sq/Q     E51  Sq/Q     E51  
+374851 2006 VV2                     2006 VV2       Scomp    E51  S        936,E51
+367943 2012 DA14                    2012 DA14      L        D11  L        D11
+366833 2005 MC                      2005 MC        Sr       D81  Sr;X     B34,A89,D81
+363814 2005 ND7                     2005 ND7       S/Sr     E51  S/Sr     E51  
+363790 2005 JE46                    2005 JE46      C/X/T    D81  C/X/T    D81
+363305 2002 NV16                    2002 NV16      Q        E49  Q        E49  
+363075 2000 OG8                     2000 OG8       Scomp    E51  Scomp    E51  
+363067 2000 CO101                   2000 CO101     X        D81  Xk;X     664,D81
+357439 2004 BL86                    2004 BL86      V        F38  V        F38,F22
+356285 2010 DE                      2010 DE        S        H88  S        H88    
+352143 2007 LR32                    2007 LR32      Scomp    E51  Scomp    E51  
+350751 2002 AW                      2002 AW        B        F82  B        F82
+350523 2000 EA14                    2000 EA14      Q        E49  Q        E49  
+347813 2002 NP1                     2002 NP1       Q        D81  Q        D81
+345853 2007 PU11                    2007 PU11      S/Sr     E51  S/Sr     E51  
+345705 2006 VB14                    2006 VB14      Q        E51  Q        E51  
+337866 2001 WL15                    2001 WL15      Sk       664  Sk       664   
+334673 2003 AL18                    2003 AL18      S        H88  S        H88    
+334412 2002 EZ2                     2002 EZ2       S        H88  S        H88    
+333578 2006 KM103                   2006 KM103     V        H88  V        H88    
+333358 2001 WN1                     2001 WN1       C        C80  C        C80
+330825 2008 XE3                     2008 XE3       S        C79  S        C79
+329614 2003 KU2                     2003 KU2       Sq       C36  Sq       C36
+325769 2010 LY63                    2010 LY63      Sq/Q     E51  Sq/Q     E51  
+311925 2007 BF72                    2007 BF72      Sq/Sr    E49  Sq/Sr    E49
+310442 2000 CH59                    2000 CH59      Sq       D81  Sq       D81
+310442 2000 CH59                    2000 CH59      Scomp    E51  Scomp    E51
+309214 2007 LL                      2007 LL        Q        E51  Q        E51  
+303174 2004 FH11                    2004 FH11      S/Sr     E51  S/Sr     E51  
+302831 2003 FH                      2003 FH        Q        D81  Q        D81
+302831 2003 FH                      2003 FH        Q        E51  Q        E51  
+302311 2002 AA                      2002 AA        S        E51  Sq,S     664,E51
+301844 1990 UA                      1990 UA        Sq       D81  Sq       D81
+301844 1990 UA                      1990 UA        Scomp    E51  Scomp    E51
+297418 2000 SP43                    2000 SP43      V        D81  Sr;V     B49,D81
+297274 1996 SK                      1996 SK        S        D80  S        D80
+293726 2007 RQ17                    2007 RQ17      A        H85  A        H85
+285838 2001 FA1                     2001 FA1       Sq       E51  Sq       E51  
+285263 1998 QE2                     1998 QE2       Ch       D10  Ch       D10,D12
+283460 2001 PD1                     2001 PD1       S        E51  S        E51
+277475 2005 WK4                     2005 WK4       Sk       D31  Sk       D31
+277127 2005 GW119                   2005 GW119     Sq       E42  Sq       E42
+275792 2001 QH142                   2001 QH142     C/X      D81  C/X      D81
+274138 2008 FU6                     2008 FU6       Sq/Q     E51  Sq/Q     E51  
+274138 2008 FU6                     2008 FU6       Q        E51  Sq;Q     D81,E51
+269690 1996 RG3                     1996 RG3       C        E73  C        E73
+267729 2003 FC5                     2003 FC5       S        D81  S        D81
+267136 2000 EF104                   2000 EF104     S        H88  S        H88    
+265187 2003 YS117                   2003 YS117     Q        D81  Q        D81
+264357 2000 AZ93                    2000 AZ93      Scomp    E51  Scomp    E51
+260141 2004 QT24                    2004 QT24      Scomp    E51  Q;Scomp  B34,D81,E51
+257744 2000 AD205                   2000 AD205     K        D81  K        B34,D81
+256412 2007 BT2                     2007 BT2       C/Cb     D81  C/Cb     D81
+253062 2002 TC70                    2002 TC70      Sq/Sr    E49  Sq/Sr    E49
+251346 2007 SJ                      2007 SJ        S        D95  S,K      D95
+250706 2005 RR6                     2005 RR6       S        H88  S        H88    
+248818 2006 SZ217                   2006 SZ217     Sr/S     E51  Sr/S     B34,D81,E51
+247517 2002 QY6                     2002 QY6       Sr       D81  Sr       D81
+243566 1995 SA                      1995 SA        S        H88  S        H88    
+242708 2005 UK1                     2005 UK1       S        H88  S        H88    
+242187 2003 KR18                    2003 KR18      S        A45  S        A45
+241662 2000 KO44                    2000 KO44      Sq       E51  Sa;Sq/Q  C93,D81,E51
+238063 2003 EG                      2003 EG        V        692  V        692,A45 
+237442 1999 TA10                    1999 TA10      S/Sr     E51  S/Sr     D81,E51
+236716 2007 FV42                    2007 FV42      S/Sr     E51  S/Sr     E51
+235756 2004 VC                      2004 VC        S/Sr     E51  Sr/S     B34,D81,E51
+231937 2001 FO32                    2001 FO32      S/Sr     E51  S/Sr     E51
+231134 2005 TU45                    2005 TU45      S/Sr     E51  S/Sr     E51
+230111 2001 BE10                    2001 BE10      Scomp    E51  R;Scomp  A89,E51
+229007 2003 XF11                    2003 XF11      S/Sr     E51  S/Sr     E51
+220124 2002 TE66                    2002 TE66      Sq       D81  Sq/Q     D81
+219071 1997 US9                     1997 US9       Q        E51  Q;S      539,664,540,D81,E51
+218863 2006 WO127                   2006 WO127     Q        E51  Sq,Q     D81,E51
+217807 2000 XK44                    2000 XK44      Scomp    E51  S;Q      A36,A37,A58,D81,E51
+217796 2000 TO64                    2000 TO64      S/Sr     E51  Sq,Sk,Sr A37,A39,A58,D81,E51
+217390 2005 CW25                    2005 CW25      T        A58  T        A58 
+215188 2000 NM                      2000 NM        Sr       664  Sr       664    
+214869 2007 PA8                     2007 PA8       Q        E76  Q/O,Xc,S E76,E75,E49,C81,D38,F82
+214088 2004 JN13                    2004 JN13      Sq       D81  Sq       D81
+208023 1999 AQ10                    1999 AQ10      S:       A58  S:       A58,664    
+207970 1996 BZ3                     1996 BZ3       X        539  X        539,664 
+207945 1991 JW                      1991 JW        Scomp    E51  Sq/Q     D81,E51
+207398 2006 AS2                     2006 AS2       C        A58  C        A58
+206910 2004 NL8                     2004 NL8       Q        E51  Q        E51
+205744 2002 BK25                    2002 BK25      Sk       664  Sk       664    
+203471 2002 AU4                     2002 AU4       C/Cg     E42  C/Cg     E42
+203015 1999 YF3                     1999 YF3       Sq       539  Sq       539
+200840 2001 XN254                   2001 XN254     S        E51  S        664,D81,E51
+200754 2001 WA25                    2001 WA25      S        664  S        664 
+198856 2005 LR3                     2005 LR3       Sq       D81  Sq/Q     D81
+194386 2001 VG5                     2001 VG5       Sq       664  Sq       664    
+194268 2001 UY4                     2001 UY4       X        664  X        664    
+194126 2001 SG276                   2001 SG276     S        H88  S        H88    
+194006 2001 SG10                    2001 SG10      X        666  X        666    
+192563 1998 WZ6                     1998 WZ6       V        539  V        539,664,540
+192559 1998 VO                      1998 VO        S        540  S        540
+190491 2000 FJ10                    2000 FJ10      S        C67  S        C67
+189552 2000 RL77                    2000 RL77      S/Sr     E51  Sq,Sr    614,A45,E51
+189040 2000 MU1                     2000 MU1       S        664  S        664 
+187026 2005 EK70                    2005 EK70      Sq       A58  Sq       A58
+185851 2000 DP107                   2000 DP107     Sq       E51  Sq       E51
+184266 2004 VW14                    2004 VW14      Sq/Q     E51  Q,Sq     D81,E51
+175729 1998 BB10                    1998 BB10      Sq       539  Sq       539
+175706 1996 FG3                     1996 FG3       C/Ch     D81  Xc;B;Ch  D16,B65,B34,A58,539,540,D81
+174806 2003 XL                      2003 XL        D        H88  D        H88    
+173689 2001 PK9                     2001 PK9       Sq       E51  Sq       E51
+171839 2001 JM1                     2001 JM1       S        664  S        664
+170903 2004 WS2                     2004 WS2       Q        F66  Q        F66
+169675 2002 JM97                    2002 JM97      Scomp    E51  Scomp    E51
+164400 2005 GN59                    2005 GN59      Sq/Q     E51  Q,Sq     D81,E51
+164222 2004 RN9                     2004 RN9       Scomp    E51  Sq,Scomp E42,E51
+164211 2004 JA27                    2004 JA27      Sq/Q     F82  Sq/Q,Sco F82,E51
+164202 2004 EW                      2004 EW        C/X      D81  X;C/X    B34,D81
+164184 2004 BF68                    2004 BF68      C        936  C        936
+164121 2003 YT1                     2003 YT1       V        D81  V,R,Sr   C93,A58,A38,D81
+163899 2003 SD220                   2003 SD220     Sr       F82  S/Sr     F82,E51
+163732 2003 KP2                     2003 KP2       C        996  C        996
+163697 2003 EF54                    2003 EF54      Q        E51  V;Q      A58,D81,E51
+163364 2002 OD20                    2002 OD20      Sq       D12  Sq       D12
+163250 2002 GH1                     2002 GH1       Scomp    E51  Scomp    E51
+163249 2002 GT                      2002 GT        Sq       D12  Sq       D12,D51
+163243 2002 FB3                     2002 FB3       Sq       D81  Sq/Q     D81
+163132 2002 CU11                    2002 CU11      C/X      D81  C/X      D81
+163081 2002 AG29                    2002 AG29      Q        E51  S;Q      B49,E51
+163014 2001 UA5                     2001 UA5       Sq       664  Sq       664    
+163001 2001 SE170                   2001 SE170     S/Sr     E51  Sr,S     B34,D81,E51
+163000 2001 SW169                   2001 SW169     Scomp    E51  S/Sr/Sq  E49,E51  
+162998 2001 SK162                   2001 SK162     D        D81  T;D      666,B34,A89,D81
+162900 2001 HG31                    2001 HG31      Sq       E51  Q;Sq     D81,E51
+162781 2000 XL44                    2000 XL44      S        E51  S        664,E51
+162740 2000 WF6                     2000 WF6       Sq       664  Sq       664    
+162581 2000 SA10                    2000 SA10      K        614  K        614,A45
+162567 2000 RW37                    2000 RW37      C        664  C        664    
+162566 2000 RJ34                    2000 RJ34      X        A89  X        A89
+162483 2000 PJ5                     2000 PJ5       Q        E51  Q        D81,E51
+162422 2000 EV70                    2000 EV70      Q        540  Q        540
+162421 2000 ET70                    2000 ET70      X        540  X        540
+162385 2000 BM19                    2000 BM19      O        666  O        666    
+162273 1999 VL12                    1999 VL12      V        H88  V        H88    
+162195 1999 RK45                    1999 RK45      Q        F66  Q        F66
+162186 1999 OP3                     1999 OP3       Scomp    E51  S        996,E51
+162181 1999 LF6                     1999 LF6       S/Sr     E51  L;S/Sr   A58,E51
+162173 1999 JU3                     1999 JU3       C        876  C        876,539,882
+162157 1999 CV8                     1999 CV8       V        664  V        664    
+162142 1998 VR                      1998 VR        Sk       664  Sk;S     539,664,540
+162117 1998 SD15                    1998 SD15      Sq/Q     E51  Sq/Q     E51
+162058 1997 AE12                    1997 AE12      Q        E51  Q        E51
+162015 1994 TF2                     1994 TF2       Sr       664  Sr;S     664,540
+162011 1994 AB1                     1994 AB1       Sq       539  Sq       539,664
+161998 1988 PA                      1988 PA        Scomp    E51  Q,S      D81,E51
+161989 Cacus                        1978 CA        Scomp    E51  S;Q      425,D81,E51
+159857 2004 LJ1                     2004 LJ1       S        H88  S        H88    
+159609 2002 AQ3                     2002 AQ3       Sk       C93  Sk       C93
+159402 1999 AP10                    1999 AP10      Scomp    E51  Sq;Sa;L  B34,A58,A37,A39,A89,D81,E51
+155110 2005 TB                      2005 TB        S        H88  S        H88    
+154715 2004 LB6                     2004 LB6       Sq/Q     E51  Q,Sq/Q   D81,E51
+154453 2003 CJ11                    2003 CJ11      S/Sr     E51  S/Sr     E51
+154347 2002 XK4                     2002 XK4       S-       A45  S-       A45
+154302 2002 UQ3                     2002 UQ3       Sq       E51  Sq       E51
+154276 2002 SY50                    2002 SY50      Q        F66  Q;S/Sr   F66,E51
+154275 2002 SR41                    2002 SR41      C        H88  C        H88    
+154244 2002 KL6                     2002 KL6       Sq/Q     E51  Q,Sq     D81,E51
+154029 2002 CY46                    2002 CY46      S/Sr     E51  K;S      A80,D81,E51
+153958 2002 AM31                    2002 AM31      Q        F82  Q        F82
+153953 2002 AD9                     2002 AD9       L        664  L        664    
+153842 2001 XT30                    2001 XT30      C/X      D81  C/X      D81
+153814 2001 WN5                     2001 WN5       K/L/Sq   D81  K/L/Sq   D81
+153792 2001 VH75                    2001 VH75      Q        F66  Q        F66
+153591 2001 SN263                   2001 SN263     B        E55  B        E55
+153219 2000 YM29                    2000 YM29      C/X      D81  X:C/X    B34,D81
+153201 2000 WO107                   2000 WO107     X        664  X        664    
+153002 2000 JG5                     2000 JG5       S:       664  S:       664    
+152978 2000 GJ147                   2000 GJ147     S:       664  S:       664    
+152931 2000 EA107                   2000 EA107     Q        E51  Q        664,D81,E51
+152828 1999 VT25                    1999 VT25      C        F66  C        F66
+152756 1999 JV3                     1999 JV3       Sa       D12  Sa,S     D12,539
+152742 1998 XE12                    1998 XE12      R/S      A89  RS       A89
+152679 1998 KU2                     1998 KU2       Cb       664  Cb;F     539,664,540
+152664 1998 FW4                     1998 FW4       Scomp    E51  Xc;Scomp A58,E51
+152637 1997 NC1                     1997 NC1       B        540  B        540
+152563 1992 BF                      1992 BF        K/C/X    D81  Xc;K/C/X 539,664,D81
+152560 1991 BN                      1991 BN        Q        664  Q,S-     664,A45
+152558 1990 SA                      1990 SA        S/Sr     E51  S;Sq     474,D81,E51
+145656 4788 P-L                     4788 P-L       S/Sr     E51  Sv;S/Sr  E42,E51
+144922 2005 CK38                    2005 CK38      Sq       E51  Sq       D81,E51
+144900 2004 VG64                    2004 VG64      Scomp    E51  Sq       D81,E51
+144898 2004 VD17                    2004 VD17      E        839  E        839
+143947 2003 YQ117                   2003 YQ117     S/Sr     E51  V;S/Sr   815,E51
+143651 2003 QO104                   2003 QO104     Sa       F82  Q;S;R;Sa B34,A58,A89,D81,E51,F82
+143487 2003 CR20                    2003 CR20      Q        E51  Q        E51
+143381 2003 BC21                    2003 BC21      Sr/S     D81  S;Sr     C93,D81
+142563 2002 TR69                    2002 TR69      S        H88  S        H88    
+142561 2002 TX68                    2002 TX68      X        A45  X        A45
+142464 2002 TC9                     2002 TC9       Sq/Sr    E42  Sq/Sr    E42
+142348 2002 RX211                   2002 RX211     Scomp    E51  Scomp    E51
+142040 2002 QE15                    2002 QE15      Scomp    E51  S,A      753,A45,E51
+141498 2002 EZ16                    2002 EZ16      Sq       D81  Sq       D81
+141484 2002 DB4                     2002 DB4       S-       A45  S,S-     753,A45
+141432 2002 CQ11                    2002 CQ11      S/Sr     E51  S        D81,E51
+141079 2001 XS30                    2001 XS30      Xc       664  Xc       664
+141052 2001 XR1                     2001 XR1       Sq       E51  Sq       664,B34,D81,E51
+141018 2001 WC47                    2001 WC47      Sq       E49  Sq       E49
+139622 2001 QQ142                   2001 QQ142     Q        E51  Sq,Q     664,E51
+139359 2001 ME1                     2001 ME1       P        691  P        691
+139056 2001 FY                      2001 FY        S        664  S        664    
+138937 2001 BK16                    2001 BK16      X        A89  X        A89
+138911 2001 AE2                     2001 AE2       S        D81  T;S      666,D81
+138893 2000 YH66                    2000 YH66      Xk       664  Xk       664    
+138883 2000 YL29                    2000 YL29      Q        E51  Sq;Q     B34,D81,E51
+138852 2000 WN10                    2000 WN10      S        H88  S        H88    
+138524 2000 OJ8                     2000 OJ8       Sr       E51  Sr       664,E51
+138404 2000 HA24                    2000 HA24      S/Sr     E51  S,V,Sr   C93,A73,E51
+138325 2000 GO82                    2000 GO82      S:       664  S:       664    
+138258 2000 GD2                     2000 GD2       Sq       E51  Sq       664,D81,E51
+138205 2000 EZ148                   2000 EZ148     Sq       614  Sq       614,A45
+138155 2000 ES70                    2000 ES70      S        540  S        540
+138127 2000 EE14                    2000 EE14      Q        540  Q        540
+137925 2000 BJ19                    2000 BJ19      Q        664  Q;STD    664,A89
+137924 2000 BD19                    2000 BD19      V        D81  V        B34,D81
+137805 1999 YK5                     1999 YK5       X        539  X;RQ     539,A89
+137799 1999 YB                      1999 YB        Sq       E51  Sq       539,E51
+137671 1999 XP35                    1999 XP35      Sr       D81  S/Sr     D81
+137427 1999 TF211                   1999 TF211     S        747  S        747,996
+137199 1999 KX4                     1999 KX4       Sq       D12  Sq       D12
+137170 1999 HF1                     1999 HF1       X        D81  X;C/X    664,B34,D81
+137158 1999 FB                      1999 FB        Q        539  Q        539,664
+137126 1999 CF9                     1999 CF9       Q        539  Q        539
+137125 1999 CT3                     1999 CT3       Q        D81  Q        D81
+137084 1998 XS16                    1998 XS16      S        D81  S        D81
+137064 1998 WP5                     1998 WP5       Sl       539  Sl       539
+137062 1998 WM                      1998 WM        Sr       E51  Sq;Q;Sr  539,664,540,D81,E51
+137052 1998 VO33                    1998 VO33      V        539  V        539,664,540
+137032 1998 UO1                     1998 UO1       Q        E51  Sq;Q     B34,D81,E51
+136993 1998 ST49                    1998 ST49      S/Sr     E51  Xe;Q     C78,539,E51
+136923 1998 JH2                     1998 JH2       Sq/Q     E51  S;Q,Sq   E49,E51
+136849 1998 CS1                     1998 CS1       Sa       A58  Sa       A58
+136818 Selqet                       1997 MW1       X        540  X        540
+136795 1997 BQ                      1997 BQ        S        539  S        539,664,540
+136793 1997 AQ18                    1997 AQ18      C        539  C        539,664
+136770 1996 PC1                     1996 PC1       S/Sr     E51  S/Sr     E51
+136745 1995 WL8                     1995 WL8       Sq       539  Sq       539,664 
+136617 1994 CC                      1994 CC        Sa       D81  Sq;Sa    A58,D81
+136564 1977 VA                      1977 VA        X        D81  XC;X     425,B34,D81
+108519 2001 LF                      2001 LF        C        D81  C        D81
+103067 1999 XA143                   1999 XA143     S/Sr     E51  S,Sr     A89,E51
+101955 Bennu                        1999 RQ36      B        B43  B,C      B43,806,A65
+100926 1998 MQ                      1998 MQ        Sq       E51  S,Sq     539,664,540,D81,E51
+100756 1998 FM5                     1998 FM5       S        539  S        539,664,540
+100085 1992 UY4                     1992 UY4       P        B34  P;X      814,B34
+ 99942 Apophis                      2004 MN4       S/Sq     F82  Sq,Scomp 945,E51,F82
+ 99935 2002 AV4                     2002 AV4       B        D81  B        B34,D81
+ 99907 1989 VA                      1989 VA        Sr       E51  Sq;S;Sr  539,664,B34,D81,E51
+ 99799 2002 LJ3                     1999 LJ3       Sq       D81  Sq       D81
+ 99248 2001 KY66                    2001 KY66      S/T      A89  ST       A89
+ 98943 2001 CC21                    2001 CC21      S        E51  Sk;L;S   A45,666,E51
+ 96590 1998 XB                      1998 XB        Sq       E51  Sq;Q     664,D81,E51
+ 90403 2003 YE45                    2003 YE45      Sq       E51  Sq       E51
+ 90367 2003 LC5                     2003 LC5       C        D81  C,X,T    D81
+ 89958 2002 LY45                    2002 LY45      Q        E51  Q        E51
+ 89830 2002 CE                      2002 CE        S        C93  S        C93
+ 89355 2001 VS78                    2001 VS78      Sr       E51  S;Sr     664,D81,E51
+ 89136 2001 US16                    2001 US16      K/Xe     E49  K/Xe     E49 
+ 88710 2001 SL9                     2001 SL9       Sr       614  Sr;Q     614,A45
+ 88254 2001 FM129                   2001 FM129     Q        E51  Sq;Q     A31,A58,D81,E51
+ 87684 2000 SY2                     2000 SY2       Scomp    E51  Q;Scomp  614,A45,D81,E51
+ 87024 2000 JS66                    2000 JS66      Scomp    E51  Xc;Scomp A45,E51
+ 86829 2000 GR146                   2000 GR146     S:       664  S:       664    
+ 86819 2000 GK137                   2000 GK137     Sq       E51  Sq       664,E51
+ 86667 2000 FO10                    2000 FO10      Sq       D81  S;Sq     A45,D81
+ 86450 2000 CK33                    2000 CK33      Xk       664  Xk       664    
+ 86326 1999 WK13                    1999 WK13      S        539  S        539
+ 86324 1999 WA2                     1999 WA2       S/Sr     E51  Sr,S     D81,E51
+ 86067 1999 RM28                    1999 RM28      Q        D81  S;Q      A89,B34,D81
+ 86039 1999 NC43                    1999 NC43      Scomp    E51  Q;Scomp  664,540,E51
+ 85990 1999 JV6                     1999 JV6       Xk       539  Xk       539
+ 85989 1999 JD6                     1999 JD6       K        D81  K;L;Cg   539,B34,A45,D81
+ 85953 1999 FK21                    1999 FK21      S        664  S        664
+ 85938 1999 DJ4                     1999 DJ4       Sq       539  Sq       539
+ 85839 1998 YO4                     1998 YO4       Sq/Q     E51  Q;Sq     B34,D81,E51
+ 85818 1998 XM4                     1998 XM4       Sr       E51  S,Srw    664,D81,E51
+ 85804 1998 WQ5                     1998 WQ5       Sv       E42  Sv       E42
+ 85774 1998 UT18                    1998 UT18      G        540  G;C      539,540
+ 85770 1998 UP1                     1998 UP1       Scomp    E51  Scomp    E51
+ 85713 1998 SS49                    1998 SS49      Sq/Sr    F66  Sq/Sr    F66,E51
+ 85709 1998 SG36                    1998 SG36      S/Sr     E51  Sr,S     B34,D81,E51
+ 85585 Mjolnir                      1998 FG2       Scomp    E51  Scomp    E51
+ 85490 1997 SE5                     1997 SE5       T        664  D;T      996,513,539,664
+ 85236 1993 KH                      1993 KH        Sq/Q     E51  Sq/Q     E51
+ 85182 1991 AQ                      1991 AQ        Sq       A58  Sq;Q,U   A58,474
+ 69230 Hermes                       1937 UB        Sq       D81  S;Sq     589          ,D81
+ 68950 2002 QF15                    2002 QF15      S/Sr     E51  V;S/Sr   815,E51
+ 68548 2001 XR31                    2001 XR31      R        613  V,R?     613,A45
+ 68372 2001 PM9                     2001 PM9       B        A45  B        A45
+ 68359 2001 OZ13                    2001 OZ13      Sq       E51  Sq       B34,D81,E51
+ 68350 2001 MK3                     2001 MK3       S/Sr     D81  S/Sr     D81
+ 68346 2001 KZ66                    2001 KZ66      S        A45  S        A45
+ 68216 2001 CV26                    2001 CV26      Scomp    E51  Sq       B34,A58,A89,D81,E51
+ 66959 1999 XO35                    1999 XO35      Sq       539  Sq       539,806
+ 66391 1999 KW4                     1999 KW4       Scomp    E51  S:       664,E51
+ 66251 1999 GJ2                     1999 GJ2       S/Sr     E51  S,Sa;Q   815,A45,A89,B34,D81,E51
+ 66146 1998 TU3                     1998 TU3       Q        E51  Q,Sk     540,A74,E51
+ 66063 1998 RO1                     1998 RO1       S/Sr     E51  S/Sr     E51
+ 66008 1998 QH2                     1998 QH2       Q        540  Q        540
+ 65996 1998 MX5                     1998 MX5       P        996  P;Xk     996,540,A45
+ 65803 Didymos                      1996 GT        Xk       666  Xk       666    
+ 65706 1992 NA                      1992 NA        C        468  C        468,665
+ 65679 1989 UQ                      1989 UQ        C/Cb     D81  B;C      539,666,D81
+ 55532 2001 WG2                     2001 WG2       Sk       664  Sk       664    
+ 54789 2001 MZ7                     2001 MZ7       X-       A45  X-;C,X   A45,A89,D81
+ 54690 2001 EB                      2001 EB        S        E51  Sl;S     664,B34,D81,E51
+ 54686 2001 DU8                     2001 DU8       S        664  S        664    
+ 54509 2000 PH5                     2000 PH5       S        815  S/V      815
+ 54071 2000 GQ146                   2000 GQ146     S        A45  S        A45
+ 53789 2000 ED104                   2000 ED104     S/Sr     E51  S,Sr     D81,E51
+ 53435 1999 VM40                    1999 VM40      Sr       E51  S;Srw,Sr 539,D81,E51
+ 53430 1999 TY16                    1999 TY16      S/Sr     E51  Sr,S     D81,E51
+ 53319 1999 JM8                     1999 JM8       P        996  P;X      996,664    
+ 52768 1998 OR2                     1998 OR2       L        D81  Xk;L     A58,D81
+ 52762 1998 MT24                    1998 MT24      X        D30  X        D30,540
+ 52760 1998 ML14                    1998 ML14      V        540  S,Sq;V   806,540
+ 52750 1998 KK17                    1998 KK17      V        D81  V        B34,D81
+ 52387 1993 OM7                     1993 OM7       S/Sr     E51  Q;Sr     D81,E51
+ 52340 1992 SY                      1992 SY        Scomp    E51  Q,S      A45,E51
+ 48603 1995 BC2                     1995 BC2       X        664  X,Xe     539,664,A45  
+ 40267 1999 GJ4                     1999 GJ4       Sq       539  Sq       539
+ 39572 1993 DQ1                     1993 DQ1       Sq/Q     E51  Q,Sq     D81,E51
+ 38086 Beowulf                      1999 JB        R        A89  R        A89
+ 37336 2001 RM                      2001 RM        S        E51  S        664,E51
+ 36284 2000 DM8                     2000 DM8       Sq       D81  Sq;K     664,B34,D81
+ 36183 1999 TX16                    1999 TX16      Ld       539  Ld       539    
+ 36017 1999 ND43                    1999 ND43      Sl       539  Sl       539    
+ 35670 1998 SU27                    1998 SU27      Sq       664  Sq       664    
+ 35432 1998 BG9                     1998 BG9       S        539  S;A      539,A89
+ 35396 1997 XF11                    1997 XF11      K        A45  Xk,K     666,A45
+ 35107 1991 VH                      1991 VH        Sq       E51  Sk,Sq    539,664,540,A45,B34,D81,E51
+ 33342 1998 WT24                    1998 WT24      Xe       A45  E,Xe     809,568,614,A45
+ 32906 1994 RH                      1994 RH        S        664  S        664    
+ 31669 1999 JT6                     1999 JT6       Sq       E51  Q,Sq     D81,E51
+ 31346 1998 PB1                     1998 PB1       Sq:      664  Sq:;Q    664,540    
+ 31345 1998 PG                      1998 PG        Sq       664  Sq;Q     539,664,540
+ 31221 1998 BP26                    1998 BP26      S        936  S        936
+ 31210 1998 BX7                     1998 BX7       Sq       614  Sq       614,A45
+ 30825 1990 TG1                     1990 TG1       Sq       E51  Sq       E51
+ 29075 1950 DA                      1950 DA        E/M:     691  EM:      691
+ 27346 2000 DN8                     2000 DN8       Q        D81  Q        B34,D81
+ 27002 1998 DV9                     1998 DV9       Q        540  Q        540
+ 26760 2001 KP41                    2001 KP41      P:       691  P:       691
+ 25916 2001 CP44                    2001 CP44      Sq       D81  Q;Sq     B34,D81
+ 25330 1999 KV4                     1999 KV4       B        664  B,C      614,664,806,A45
+ 25143 Itokawa                      1998 SF36      S        562  S(IV);Q  562,709,806,642,695,D81
+ 24761 Ahau                         1993 BW2       S        A89  S;C      A89,D81
+ 24475 2000 VN2                     2000 VN2       S        E51  Sa,S     664,E51
+ 23714 1998 EC3                     1998 EC3       Q        540  Q        540
+ 23548 1994 EF2                     1994 EF2       Q        539  Q        539,664
+ 23187 2000 PN9                     2000 PN9       Sq/Q     E51  Sq       D81,E51
+ 23183 2000 OY21                    2000 OY21      Sq/Q     E51  Sq,Q     D81,E51
+ 22771 1999 CU3                     1999 CU3       S        E51  Sl,S     664,E51
+ 22753 1998 WT                      1998 WT        Scomp    E51  Q;Sq     540,B34,D81,E51
+ 22099 2000 EX106                   2000 EX106     S:       664  S:       664    
+ 21088 1992 BL2                     1992 BL2       Sq       E51  S;Q      A89,B34,D81,E51
+ 20826 2000 UV13                    2000 UV13      Sq       664  Sq       664    
+ 20790 2000 SE45                    2000 SE45      S        E51  S        664,B34,D81,E51
+ 20429 1998 YN1                     1998 YN1       Scomp    E51  Scomp    E51
+ 20425 1998 VD35                    1998 VD35      Sq       664  Sq       664    
+ 20255 1998 FX2                     1998 FX2       Sq       539  Sq       539,664,540
+ 20236 1998 BZ7                     1998 BZ7       Q        540  Q        540
+ 20086 1994 LW                      1994 LW        C        D81  C        D81
+ 20043 1993 EM                      1993 EM        U        539  U        539
+ 19764 2000 NF5                     2000 NF5       Sq/Q     E51  S;Sq     C93,D81,E51
+ 19356 1997 GH3                     1997 GH3       Sq       E51  S,Sq     539,644,E51
+ 18882 1999 YN4                     1999 YN4       Sr       D81  S;Sr     539,D81
+ 18736 1998 NU                      1998 NU        S        E51  Sk,S     664,E51
+ 18172 2000 QL7                     2000 QL7       S/Sr     E51  S/Sr     E51
+ 18106 Blume                        2000 NX3       Scomp    E51  Scomp    E51
+ 17511 1992 QN                      1992 QN        X        539  X        539,664
+ 17274 2000 LC16                    2000 LC16      D        D81  Xk;D     664,B34,D81
+ 16960 1998 QS52                    1998 QS52      Sq/Sr    F66  Sq/Sr;Q  F66,996,539,664,540,E51
+ 16834 1997 WU22                    1997 WU22      S        E51  S        539,B34,D81,E51
+ 16657 1993 UB                      1993 UB        Sr       539  Sr       539,664
+ 16636 1993 QP                      1993 QP        Scomp    E51  Scomp    E51
+ 16064 1999 RH27                    1999 RH27      C        539  C        539
+ 15817 Lucianotesi                  1994 QC        Xc       664  Xc       664,540    
+ 15745 1991 PM5                     1991 PM5       S        E51  S        664,D81,E51
+ 14827 Hypnos                       1986 JK        C        470  C        470,318
+ 14402 1991 DB                      1991 DB        Ch       D81  C;M;B    A58,664,806,540,D81
+ 13651 1997 BR                      1997 BR        S        664  S        539,664,540
+ 13553 Masaakikoyama                1992 JE        Cg       E42  Cg       E42
+ 12923 Zephyr                       1999 GK4       Scomp    E51  S        664,D81,E51
+ 12711 Tukmit                       1991 BB        Q        D81  Sr;Q     664,B34,D81
+ 12538 1998 OH                      1998 OH        S:       664  S:       664    
+ 11500 Tomaiyowit                   1989 UR        S        E51  S        539,664,540,E51
+ 11405 1999 CV3                     1999 CV3       Sq       664  Sq       664,806
+ 11398 1998 YP11                    1998 YP11      Sr       E51  Sr       664,B34,D81,E51
+ 11311 Peleus                       1993 XN2       Sq       664  Sq       539,664
+ 11284 Belenus                      1990 BA        S        D01  S        D01
+ 11066 Sigurd                       1992 CC1       S        E51  K;S;Sr   665,540,B34,D81,E51
+ 11054 1991 FA                      1991 FA        Sq/S     E51  Sa,Sq/S  614,A45,E51
+ 10563 Izhdubar                     1993 WD        Q        664  Q        539,664
+ 10302 1989 ML                      1989 ML        E        810  E;X      810,538,539,540
+ 10165 1995 BL2                     1995 BL2       L        664  L        539,664
+ 10145 1994 CK1                     1994 CK1       S        D81  S        D81
+ 10115 1992 SK                      1992 SK        Scomp    E51  S:;Sq    664,B34,D81,E51
+  9969 Braille                      1992 KD        Q        539  Q        539
+  9856 1991 EE                      1991 EE        S        141  S        141
+  9400 1994 TW1                     1994 TW1       Sr       539  Sr       539,664
+  9162 1987 OA                      1987 OA        B        540  B        540
+  8567 1996 HW1                     1996 HW1       Sq       E51  Q,Sq     D81,E51
+  8566 1996 EN                      1996 EN        V        D81  V        B34,A58,539,664,D81
+  8201 1994 AH2                     1994 AH2       O        664  O;V      664,540
+  8176 1991 WA                      1991 WA        S        022  S,Q      022,185,664
+  8034 Akka                         1992 LR        Q        540  Q        540
+  8013 Gordonmoore                  1990 KA        Sr       A45  Sr       A45
+  7977 1977 QQ5                     1977 QQ5       S        539  S        539,664,540
+  7889 1994 LX                      1994 LX        V        540  V        540
+  7888 1993 UC                      1993 UC        S        540  U;S      539,664,540  
+  7822 1991 CS                      1991 CS        S        D81  S        539,664,540,B34,D81
+  7753 1988 XB                      1988 XB        B        539  B        539,666
+  7482 1994 PC1                     1994 PC1       S        E51  S        539,664,E51
+  7480 Norwan                       1994 PC        S        539  S        539,664
+  7474 1992 TC                      1992 TC        X        665  X        665    
+  7358 Oze                          1995 YA3       Sq       E51  Sq       539,665,540,D81,E51
+  7350 1993 VA                      1993 VA        C        D81  C;X      D81
+  7341 1991 VK                      1991 VK        Q        E51  S,Sq,Sr  022,565,614,539,664,A45,E51
+  7336 Saunders                     1989 RS1       Q        E51  Sq,Sr,Q  539,664,A45,E51
+  7092 Cadmus                       1992 LC        C        185  C        185
+  7088 Ishtar                       1992 AA        Sq/Sr    E42  Sq/Sr    E42
+  6611 1993 VW                      1993 VW        V        664  Q;V      027,539,664
+  6569 1993 MO                      1993 MO        Sr       664  Sr       539,664
+  6489 Golevka                      1991 JX        Q        664  Q;V;Sq   539,664,197,182,140,806
+  6455 1992 HE                      1992 HE        Srw      D81  S;Srw    539,664,540,B34,D81
+  6239 Minos                        1989 QF        Sq       E51  Sqw      B34,D81,E51
+  6178 1986 DA                      1986 DA        M        415  M        415
+  6063 Jason                        1984 KB        K/Sq     F66  K/Sq,S   F66,009,E51,E73
+  6053 1993 BW3                     1993 BW3       Sq       664  S,QR,Sq  352,185,539,664
+  6050 Miwablock                    1992 AE        X        H88  X        H88    
+  6047 1991 TB1                     1991 TB1       S        E51  S        539,664,540,B34,D81,E51
+  5836 1993 MF                      1993 MF        S        664  S        539,664,540
+  5828 1991 AM                      1991 AM        Q        664  Q        664    
+  5797 Bivoj                        1980 AA        S        150  S        150,145
+  5786 Talos                        1991 RC        Scomp    E51  Sq       D81,E51
+  5751 Zao                          1992 AC        K        A45  X;K      539,664,614,540,A45
+  5693 1993 EA                      1993 EA        Sq       E51  Q;Sq     540,D81,E51
+  5660 1974 MA                      1974 MA        Q        E51  Q        539,664,E51
+  5653 Camarillo                    1992 WD5       S/Sr     E51  S;Sr     A89,D81,E51
+  5646 1990 TR                      1990 TR        Q        D81  S;Q      664,B34,049,D81
+  5645 1990 SP                      1990 SP        Xe       A45  Sp,Xe    614,A45,D81
+  5626 1991 FE                      1991 FE        S        E51  S        539,664,540,D81,E51
+  5620 Jasonwheeler                 1990 OA        Sq       E51  K        D81,E51
+  5604 1992 FE                      1992 FE        V        D81  V        664,A89,B34,D81
+  5587 1990 SB                      1990 SB        Sr       D81  Sq;Sr    539,664,806,540,B34,D81
+  5496 1973 NA                      1973 NA        C        D81  X:C      996,D81
+  5381 Sekhmet                      1991 JY        V        806  V        806 
+  5370 Taranis                      1986 RA        C        H88  C        H88    
+  5332 Davidaguilar                 1990 DA        S/Sr     D81  S;Sr     025,D81,E51
+  5143 Heracles                     1991 VL        Q        E51  O;Sk;Q   539,664,614,A45,D81,E51,E73
+  5131 1990 BG                      1990 BG        Sq       E51  S,Sq     539,664,D81,E51
+  5011 Ptah                         6743 P-L       Q        F82  Q;S      B34,D81,E51,F82
+  4957 Brucemurray                  1990 XJ        S        664  S        539,664
+  4954 Eric                         1990 SQ        S        664  S        425,539,664
+  4953 1990 MU                      1990 MU        Q        540  Q,R;S    185,540
+  4947 Ninkasi                      1988 TJ1       Sq       664  Sq       539,664
+  4688 1980 WF                      1980 WF        Q        E51  SQ;V;Q   049,664,E51
+  4660 Nereus                       1982 DB        X        D81  C,E,X,Xe 616,614,619,664,A45,D81
+  4596 1981 QB                      1981 QB        S        H88  S        H88       
+  4587 Rees                         3239 T-2       Sr       A45  Sr       A45
+  4544 Xanthus                      1989 FB        S/Sr     E51  Q;Sq,Sr  B34,D81,E51
+  4503 Cleobulus                    1989 WM        Sq       664  Sq       664    
+  4486 Mithra                       1987 SB        Scomp    E51  S        A58,E51,E73
+  4450 Pan                          1987 SY        S/Sr     F82  S/Sr     F82
+  4341 Poseidon                     1987 KF        O        539  O        539,664
+  4197 1982 TA                      1982 TA        Sq       E51  S;Sq     474,539,664,E51
+  4183 Cuno                         1959 LM        Q        E51  Sq;Q     539,664,540,D81,E51,E73
+  4179 Toutatis                     1989 AC        Sq       E51  S;Sk,Sq  250,196,539,664,806,D38,E51
+  4055 Magellan                     1985 DO2       V        D81  V        063,664,540,B34,D81
+  4034 1986 PA                      1986 PA        O        664  O        664
+  4015 Wilson-Harrington            1979 VA        B        D81  CF;B     425,D81
+  3988 1986 LA                      1986 LA        Scomp    E51  Ld;Sl    B26,B49,B64,E51
+  3908 Nyx                          1980 PA        V        664  V        423,252,664
+  3757 1982 XB                      1982 XB        S        425  S        425                            
+  3753 Cruithne                     1986 TO        Q        E51  Q;S      539,664,614,540,A45,E51
+  3691 Bede                         1982 FT        Xc       539  Xc;Cgh   539,664,B34,D81
+  3671 Dionysus                     1984 KD        Cb       539  Cb;X     539,664,D81
+  3554 Amun                         1986 EB        D        D81  X;M;D    A58,415,120,D81
+  3553 Mera                         1985 JA        S-       A45  S-       A45
+  3552 Don Quixote                  1983 SA        D        D81  D        664
+  3551 Verenia                      1983 RD        V        063  V        063                                           
+  3362 Khufu                        1984 QA        Xe       614  Xe       614,A45    
+  3361 Orpheus                      1982 HR        Q        E51  V;Q      471,E51
+  3352 McAuliffe                    1981 CW        Sr       E51  A;S,Sr   539,664,540,E51
+  3288 Seleucus                     1982 DV        Sq       E51  S;K      451,664,E51
+  3200 Phaethon                     1983 TB        B        D81  F,B      425,185,539,664,789
+  3199 Nefertiti                    1982 RA        K        D81  S;Sq     425,539,664
+  3122 Florence                     1981 ET3       Sq       E51  E;S;Q    425,539,664,D81,E51
+  3103 Eger                         1982 BB        Xe       D81  E;Xe     425,539,664,614,691,A45,B34
+  3102 Krok                         1981 QA        Sq       E51  QRS,S    425,614,664,540,A45,D81,E51
+  2608 Seneca                       1978 DA        S        425  S        425                      
+  2340 Hathor                       1976 UA        Sq       664  CSU;Sq   270,425,539,664
+  2212 Hephaistos                   1978 SB        Sq/Q     E51  SG;Sq/Q  425,B34,254,E51
+  2201 Oljato                       1947 XC        Sq       D81  E;Sq     185,539,664,E73
+  2102 Tantalus                     1975 YA        Sr       D81  Q;Sr     185,539,664,540,D81
+  2100 Ra-Shalom                    1978 RA        K        867  K;S,Sr;C 867,425,141,539,664
+  2063 Bacchus                      1977 HB        Sq       E51  Q;Sq     185,539,666,E51
+  2062 Aten                         1976 AA        Sr       664  S,Sr     118,539,664
+  2061 Anza                         1960 UA        C/U      035  TCG,CU   425,035
+  1981 Midas                        1973 EA        V        664  S;V      299,539,664
+  1980 Tezcatlipoca                 1950 LA        S        E51  SU;Sl,Sw 425,539,664,D81,E51
+  1943 Anteros                      1973 EC        S        E51  S;L,Sw   B34,425,539,619,667,D81,D51
+  1917 Cuyo                         1968 AA        Sv       D81  Sl       539,664           
+  1916 Boreas                       1953 RA        S        E51  S,Sw     425,614,664,A45,D81,E51
+  1915 Quetzalcoatl                 1953 EA        S        023  SMU;S    425,023
+  1866 Sisyphus                     1972 XA        Sw       D81  S        499,265,539,664
+  1865 Cerberus                     1971 UA        S        E51  S        425,539,664,D81,E51
+  1864 Daedalus                     1971 FA        Sq       D81  SQ;Sr    425,539,664
+  1863 Antinous                     1948 EA        Sq       E51  S,Sq     160,539,644,E51
+  1862 Apollo                       1932 HA        Q        E51  Q        160,539,664,E51
+  1685 Toro                         1948 OA        Sq       E51  S,Sq     425,539,619,667,789,D81,E51
+  1627 Ivar                         1929 SH        Sqw      D81  S        425,539,664,806
+  1620 Geographos                   1951 RA        Sq       E51  S        425,185,539,664,E51
+  1580 Betulia                      1950 KA        C        691  C        425,691
+  1566 Icarus                       1949 MA        Q        E51  SU;Q     048,425,185,E51
+  1036 Ganymed                      1924 TD        Sr       D81  S        425,539,664,540,B49
+   887 Alinda                       1918 DB        S        425  S        425
+   719 Albert                       1911 MT        S        E51  S        614,664,A45,E51
+   433 Eros                         1898 DQ        Sq       D81  S        425,539,664
+
+ Nr    Name                         Prov.Desig     Taxon1   Ref  Taxon_al Refs
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+         |         |         |         |         |         |         |         |         |         |         |         | 
+        10        20        30        40        50        60        70        80        90        100       110       120
+
+
+

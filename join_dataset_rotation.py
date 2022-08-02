@@ -8,6 +8,7 @@ Created on Thu Jun 30 10:12:24 2022
 import pandas as pd
 import re
 import numpy as np
+import os
 from astroquery.jplsbdb import SBDB
 from function.has_numbers import has_numbers
 from function.is_nan import isNaN
@@ -16,14 +17,14 @@ from function.start_space import start_space
 from function.write_fdf import write_fdf
 from function.are_there_NEO import are_there_NEO
 
-EARN_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/EARN/D5_EARN_data/D5_EARN_data/'
-EARN_NEW_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/'
+EARN_URL = os.path.dirname('./Old_EARN/')
+EARN_NEW_URL = os.path.dirname('./Output/')
 
 COLWIDTH = [(0, 6), (7, 35), (36, 48), (53, 68), (69, 73), (74, 88), (89, 97), (98, 130)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Period(h)", "Quality", "Amp", "Var Max", "Ref"]
 
-earn = pd.read_fwf(EARN_URL + 'rotation.txt',
+earn = pd.read_fwf(EARN_URL + '/rotation.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=1588,
                                   dtype='str', keep_default_na=False)
 
@@ -317,7 +318,7 @@ COLNAME = ["Number", "Name", "Prov.Desig",
            "Uncert. A.", "Approx A.",
            "Max Variation", "Ref"]
 
-earn_new = pd.read_fwf(EARN_NEW_URL + 'rotation.txt',
+earn_new = pd.read_fwf(EARN_NEW_URL + '/rotation.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None,
                                   dtype='str', keep_default_na=False)
 
@@ -334,10 +335,11 @@ else:
 
 df_total = df_total.sort_values("Prov.Desig").reset_index(drop=True)
 
-# for i in range(len(df_total)):
-#     row = df_total.loc[df_total["Prov.Desig"] == df_total["Prov.Desig"].iloc[i]]
-#     idx = row.index
-#     row = row.sort_values("Ref.").reset_index(drop=True)
+for i in range(len(df_total)):
+    if len(df_total.at[i, "Radar"]) == 0:
+        df_total.at[i, "Radar"] = 'N'
+    else:
+        continue
     
 i = 0
 
@@ -370,4 +372,4 @@ colspecs = [
     "{: <2} "
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/rotation_ALL.txt", df_total, colspecs)
+write_fdf("./Output/rotation_ALL.txt", df_total, colspecs)

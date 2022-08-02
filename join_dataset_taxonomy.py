@@ -8,6 +8,7 @@ Created on Mon May 23 14:44:29 2022
 import pandas as pd
 import re
 import numpy as np
+import os
 from astroquery.jplsbdb import SBDB
 from function.has_numbers import has_numbers
 from function.is_nan import isNaN
@@ -18,14 +19,14 @@ from function.are_there_NEO import are_there_NEO
 
 
 
-EARN_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/EARN/D5_EARN_data/D5_EARN_data/'
-EARN_NEW_URL = 'C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/'
+EARN_URL = os.path.dirname('./Old_EARN/')
+EARN_NEW_URL = os.path.dirname('./Output/')
 
 COLWIDTH = [(0, 7), (7, 36), (36, 51), (51, 60), (60, 65)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Taxon", "Ref"]
 
-earn = pd.read_fwf(EARN_URL + 'taxonomy.txt',
+earn = pd.read_fwf(EARN_URL + '/taxonomy.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=829)
 
 df_earn_old = pd.DataFrame(earn, columns=("Number", "Name", "Prov.Desig",
@@ -100,10 +101,11 @@ COLWIDTH = [(0, 7), (8, 36), (37, 49), (50, 54), (55, 59), (60, 63)]
 
 COLNAME = ["Number", "Name", "Prov.Desig", "Taxon", "Approx.Value", "Ref"]
 
-earn_new = pd.read_fwf(EARN_NEW_URL + 'taxonomy.txt',
+earn_new = pd.read_fwf(EARN_NEW_URL + '/taxonomy.txt',
                   names=COLNAME, colspecs=COLWIDTH, header=None)
 
 df_total = pd.concat([df_earn_old, earn_new]).reset_index(drop=True)
+    
 df_total.fillna('', inplace=True)
 
 list_non_NEO, idx = are_there_NEO(df_total)
@@ -139,7 +141,13 @@ while i < len(df_total):
     df_test.set_index(idx, drop=True, append=False, inplace=True, verify_integrity=False)
     df_total.iloc[idx[0]:idx[-1]+1] = df_test
     i = idx[-1] + 1
-#df_total = df_total.drop_duplicates(['Prov.Desig','Taxon','Approx.Value'], keep='last')
+    
+for i in range(len(df_total)):
+    if "." in str(df_total["Number"].iloc[i]):
+        ws = str(df_total["Number"].iloc[i]).find(".")
+        df_total["Number"].iloc[i] = str(df_total["Number"].iloc[i])[:ws]
+    else:
+        continue
 
 colspecs = [
     "{: <7} ",                                                  # left, width=6
@@ -150,6 +158,6 @@ colspecs = [
     "{: <2} ",
     ]
 
-write_fdf("C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/Dataset/taxonomy_ALL.txt", df_total, colspecs)
+write_fdf("./Output/taxonomy_ALL.txt", df_total, colspecs)
 
 protolog("inf", "Taxonomy database ready")

@@ -115,7 +115,7 @@ for k in range(1, 5):
         df_NEAPS["Reference"] = ref["ID"][6][2:]
 
     else:
-        df_sv = pd.read_csv(NEAPS_URL + 'tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(k),  float_precision='round_trip', dtype='str')
+        df_sv = pd.read_csv(NEAPS_URL + '/tabula-Lowell Observatory Near-Earth Asteroid Photometric Survey (NEAPS) - {}.csv'.format(k),  float_precision='round_trip', dtype='str')
 
         #
 

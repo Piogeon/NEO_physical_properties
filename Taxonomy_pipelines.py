@@ -18,9 +18,9 @@ from function.are_there_NEO import are_there_NEO
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
 
-MITH_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/163/4/165/revision1/ajac532ft7_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1656581807&Signature=jmNgrkXqaEwCqjomGDT7yIsf7l4%3D')
+MITH_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/163/4/165/revision1/ajac532ft7_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660052256&Signature=rqCrjOIiGFEYUlXGN8YYVq82QIY%3D')
 
-MANO_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/158/5/196/revision1/ajab43ddt5_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1656581845&Signature=m%2BHSDLz5ofURu7%2BS3%2B%2FP6oMKI54%3D')
+MANO_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/158/5/196/revision1/ajab43ddt5_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660052284&Signature=hKx%2Fhwsi0BlVO3UqKC6EYfMRAE4%3D')
 
 SDSS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SDSS/')
 
@@ -40,9 +40,9 @@ colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
 
-REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
+# REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
 
-ref = pd.read_fwf(REF_URL + '/Reference.txt',
+ref = pd.read_fwf('./Reference.txt',
                   names=colname, colspecs=colwidth, header=None)
 
 # MITHNEOS
@@ -195,7 +195,28 @@ for i in range(len(df_total["Number"])):
         continue
 df_total = df_total.sort_values("Number").reset_index(drop=True)
 df_total.fillna('', inplace=True)
-#df_total["Ref"] = df_total["Ref"].astype(int)
+
+idx_U = []
+for i in range(len(df_total)):
+    if df_total["Taxon"].iloc[i] == "U":
+        idx_U.append(i)
+    else:
+        continue
+
+df_total.drop(idx_U, inplace=True)
+df_total = df_total.reset_index(drop=True)
+
+for i in range(len(df_total)):
+    if "A924 UB" in df_total["Prov.Desig"].iloc[i]:
+        df_total["Prov.Desig"].iloc[i] = "1924 TD"
+    elif "A911 TB" in df_total["Prov.Desig"].iloc[i]:
+        df_total["Prov.Desig"].iloc[i] = "1911 MT"
+    elif "A918 AA" in df_total["Prov.Desig"].iloc[i]:
+        df_total["Prov.Desig"].iloc[i] = "1918 DB"
+    elif "A898 PA" in df_total["Prov.Desig"].iloc[i]:
+        df_total["Prov.Desig"].iloc[i] = "1898 DQ"
+    else:
+        continue
 
 
 # WRITE THE FILE
