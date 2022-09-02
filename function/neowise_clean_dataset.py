@@ -148,8 +148,5 @@ def neowise_clean_dataset(NEO_URL):
             idx.append(i)
             neo.append(df_NEOW["Name"].iloc[i])
 
-    for value in idx:
-        df_NEOW.drop(value, inplace=True)
-
     df_NEOW = df_NEOW.reset_index(drop=True)
     return df_NEOW, idx, neo

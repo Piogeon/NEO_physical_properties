@@ -18,17 +18,17 @@ from function.write_fdf import write_fdf
 
 
 # LOADING URLS FOR DATASETS FOR DIAMETER and ALBEDO
-NEOW45_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=43F0kmV%2FzDaa9GkHRHJo25ZrTfk%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=I23O%2F2H6wXsKaF%2FpR7yfR%2F%2FhabM%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=xVFoTiBTmenAGR%2Bc74cZ%2FCC8bTQ%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051514&Signature=JrKAYdfCV9gqC03rIBsEGbbqQWg%3D']
+NEOW45_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662712922&Signature=1RCWqh6oQLg6%2FIQ2bX2LML%2FmCI0%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662712922&Signature=i7Kryosfp8SblEWKWBXjBXWOW7k%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662712922&Signature=anYp1NPsfVvStMBsxF8M4Qxoo8Y%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/1/1/5/revision1/psjab7820t4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662712922&Signature=SkkaNkF0cxnKAHhBYw8YBx3xseY%3D']
 
-NEOW67_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=vf1P88J3W7BGy92JXFJHJ9E7qQY%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=vDGltDrzbBeP36eGuRYYSduaNEk%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=z0M6cXW%2BMlWboqvXRqPuUMqu0nE%3D',
-            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660051565&Signature=1cLSQA7%2FxAeQuxADkTJWHZoTFB4%3D']
+NEOW67_URL = ['https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt1_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662713670&Signature=6V7U9P5nrWVOEW5xj7Cb14dIFSc%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt2_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662713670&Signature=O0SwXkeiLt4VeM%2Bo%2BDee0cZ%2BzxQ%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt3_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662713670&Signature=LMHY%2F6sccl9DlkHneV5Kv7Y7uCw%3D',
+            'https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/2632-3338/2/4/162/revision1/psjac15fbt4_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662713670&Signature=3dzQ4WacW5vSDlU8uS37fcfKfA0%3D']
 
-NEOR_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/NEOROCKS/')
+NEOR_URL = os.path.dirname('./Data/NEOROCKS/')
 
 # REFERENCE
 
@@ -158,11 +158,20 @@ for value in idx:
 
 df_total = df_total.sort_values("Prov.Desig").reset_index(drop=True)
 
+df_total["Lower A."] = df_total["Lower A."].astype(str)
+df_total["Upper A."] = df_total["Upper A."].astype(str)
 
-# for i in range(len(df_total)):
-#     df_total["Ref."].iloc[i] = int(df_total["Ref."].iloc[i])
-# WRITE THE FILE
-
+for i in range(len(df_total)):
+    if len(df_total["Lower A."].iloc[i]) != 0:
+        df_total["Lower A."].iloc[i] = df_total["Lower A."].iloc[i] + '*'
+    else:
+        continue
+    
+for i in range(len(df_total)):
+    if len(df_total["Upper A."].iloc[i]) != 0:
+        df_total["Upper A."].iloc[i] = df_total["Upper A."].iloc[i] + '*'
+    else:
+        continue
 
 colspecs = [
     "{: <7} ",                                                  # left, width=6

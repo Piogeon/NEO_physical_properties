@@ -241,13 +241,13 @@ for i in range(len(df_earn_old)):
             continue
     else:
         continue
-    
+
 for i in range(len(df_earn_old)):
     if not isNaN(df_earn_old["Diameter"].iloc[i]):
         if "x" in df_earn_old["Diameter"].iloc[i]:
             string = df_earn_old["Diameter"].iloc[i]
             result = re.split("x", string)
-            if len(result)<3:
+            if len(result) < 3:
                 df_earn_old["X"].iloc[i] = result[0]
                 df_earn_old["Y"].iloc[i] = result[1]
                 df_earn_old["Diameter"].iloc[i] = np.nan
@@ -258,13 +258,13 @@ for i in range(len(df_earn_old)):
                 df_earn_old["Diameter"].iloc[i] = np.nan
     else:
         continue
-    
+
 for i in range(len(df_earn_old)):
     if any(char.isdigit() for char in df_earn_old["Name"].iloc[i]):
         df_earn_old["Name"].iloc[i] = np.nan
     else:
         continue
-    
+
 COLWIDTH = [(0, 7), (8, 36), (37, 49), (50, 56), (57, 63), (64, 70), (71, 77),
             (78, 84), (85, 93), (94, 102), (103, 111), (112, 120), (121, 124),
             (125, 133), (134, 142), (143, 151), (152, 157), (158, 161), (162, 165)]
@@ -290,7 +290,7 @@ else:
 
 df_total.reset_index(drop=True, inplace=True)
 df_total = df_total.sort_values("Name").reset_index(drop=True)
-df_total['Ref.']= df_total['Ref.'].astype(str)
+df_total['Ref.'] = df_total['Ref.'].astype(str)
 
 for i in range(len(df_total)):
     if ";" in df_total["Ref."].iloc[i]:
@@ -303,7 +303,7 @@ for i in range(len(df_total)):
         df_total["Ref."].iloc[i] = result[0]
     else:
         continue
-    
+
 for i in range(len(df_total)):
     if "A924 UB" in df_total["Prov.Desig"].iloc[i]:
         df_total["Prov.Desig"].iloc[i] = "1924 TD"
@@ -318,11 +318,6 @@ for i in range(len(df_total)):
 
 df_total = df_total.sort_values("Prov.Desig").reset_index(drop=True)
 
-# for i in range(len(df_total)):
-#     row = df_total.loc[df_total["Prov.Desig"] == df_total["Prov.Desig"].iloc[i]]
-#     idx = row.index
-#     row = row.sort_values("Ref.").reset_index(drop=True)
-    
 i = 0
 
 while i < len(df_total):
@@ -338,7 +333,7 @@ for i in range(len(df_total)):
         df_total.at[i, "Radar"] = 'N'
     else:
         continue
-    
+
 colspecs = [
     "{: <7} ",                                                  # left, width=6
     "{: <28} ",

@@ -14,9 +14,9 @@ from function.write_fdf import write_fdf
 
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
-CSS3_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/CS3/')
+CSS3_URL = os.path.dirname('./Data/CSS3/')
 
-NEAPS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/Lowell Observatory NEAPS/')
+NEAPS_URL = os.path.dirname('./Data/Lowell Observatory NEAPS/')
 
 # REFERENCE
 

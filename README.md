@@ -6,9 +6,10 @@ Program to update NEOs' physical properties for ESA/NEOCC database.
 Libraries needed:
     1) Pandas 1.1.3
     2) Tabula 2.3.0
-    3) Numpy 1.19.2
+    3) Numpy 1.23.2
     4) Regex 2020.10.15
-    5) ElementTree 1.3.0
+    5) Astroquery
+    6) Sys 3.8.5
 
 In the following text you can find the explanation of each file inside the NEW EARN 
 project about the input it takes, the data management and the output it produces.

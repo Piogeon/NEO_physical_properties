@@ -20,10 +20,9 @@ from function.are_there_NEO import are_there_NEO
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
 
-SKYM_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/')
+SKYM_URL = os.path.dirname('./Data/SkyMapper/')
 
-PRAV_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/'
-            'Article/Binary_asteroid_parameters/')
+PRAV_URL = os.path.dirname('./Data/Binary_asteroid_parameters/')
 
 # REFERENCE
 

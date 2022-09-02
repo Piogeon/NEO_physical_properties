@@ -18,20 +18,15 @@ from function.are_there_NEO import are_there_NEO
 
 # LOADING URLS FOR DATASETS FOR TAXONOMY
 
-MITH_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/163/4/165/revision1/ajac532ft7_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660052256&Signature=rqCrjOIiGFEYUlXGN8YYVq82QIY%3D')
+MITH_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/163/4/165/revision1/ajac532ft7_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662709352&Signature=upr%2FpUt0Wt9n2rw09FZ8%2FRZu0os%3D')
 
-MANO_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/158/5/196/revision1/ajab43ddt5_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1660052284&Signature=hKx%2Fhwsi0BlVO3UqKC6EYfMRAE4%3D')
+MANO_URL = ('https://cfn-live-content-bucket-iop-org.s3.amazonaws.com/journals/1538-3881/158/5/196/revision1/ajab43ddt5_mrt.txt?AWSAccessKeyId=AKIAYDKQL6LTV7YY2HIK&Expires=1662709331&Signature=LUMj8BPAJ7eiWR6Nhg92HoTXTCA%3D')
 
-SDSS_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SDSS/')
+SDSS_URL = os.path.dirname('./Data/SDSS/')
 
-SKYM_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SkyMapper/')
+SKYM_URL = os.path.dirname('./Data/SkyMapper/')
 
-SIMD_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/SiMDA/')
-
-NEOR_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/NEOROCKS/')
-
-PRAV_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books/Article/Binary_asteroid_parameters/')
-
+NEOR_URL = os.path.dirname('./Data/NEOROCKS/')
 
 # REFERENCE
 
@@ -39,8 +34,6 @@ PRAV_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Books
 colwidth = [(0, 5), (6, 105)]
 
 colname = ["ID", "Reference"]
-
-# REF_URL = os.path.dirname('C:/Users/pio-r/OneDrive/Desktop/ESA/Internship/Data/Programs/Primary_Pipelines/')
 
 ref = pd.read_fwf('./Reference.txt',
                   names=colname, colspecs=colwidth, header=None)

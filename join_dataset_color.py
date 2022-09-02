@@ -25,7 +25,8 @@ COLWIDTH = [(0, 6), (7, 35), (36, 48), (49, 58), (59, 74), (75, 84), (85, 100), 
 COLNAME = ["Number", "Name", "Prov.Desig", "U-V", "Ref 1", "B-V", "Ref 2", "V-R", "Ref 3", "R-I", "Ref 4"]
 
 earn = pd.read_fwf(EARN_URL + '/color.txt',
-                  names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=315)
+                  names=COLNAME, colspecs=COLWIDTH, header=None, skiprows=1, nrows=315,
+                                  dtype='str', keep_default_na=False)
 
 df_1 = pd.DataFrame(earn, columns=["Number", "Name", "Prov.Desig", "U-V", "Value", "Ref 1"])
 df_1["Value"] = df_1["U-V"]
@@ -89,7 +90,8 @@ COLWIDTH = [(0, 7), (8, 36), (37, 49), (50, 53), (54, 61), (62, 69), (70, 77), (
 COLNAME = ["Number", "Name", "Prov.Desig", "Type", "Value", "Lower", "Upper", "Uncert", "Ref"]
 
 earn_new = pd.read_fwf(EARN_NEW_URL + '/color.txt',
-                  names=COLNAME, colspecs=COLWIDTH, header=None)
+                  names=COLNAME, colspecs=COLWIDTH, header=None,
+                                  dtype='str', keep_default_na=False)
 
 df_total = pd.concat([df_earn_old, earn_new]).reset_index(drop=True)
 df_total.fillna('', inplace=True)
@@ -129,6 +131,16 @@ while i < len(df_total):
     df_total.iloc[idx[0]:idx[-1]+1] = df_test
     i = idx[-1] + 1
 
+df_total["Number"] = df_total["Number"].astype(str)
+for i in range(len(df_total)):
+    if len(df_total["Number"].iloc[i]) != 0:
+        if '.' in df_total["Number"].iloc[i]:
+            pt = df_total["Number"].iloc[i].find(".")
+            df_total["Number"].iloc[i] = df_total["Number"].iloc[i][:pt]
+        else:
+            continue
+    else:
+        continue
 
 colspecs = [
     "{: <7} ",
